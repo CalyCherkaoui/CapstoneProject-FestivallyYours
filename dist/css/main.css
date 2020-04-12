@@ -28,7 +28,37 @@ header {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative; }
+    .nav-list__link:after {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: #0f4c81;
+      position: absolute;
+      bottom: -0.6rem;
+      left: 0;
+      right: 0;
+      transform: scale(0, 1);
+      transform-origin: left;
+      transition: transform ease-in-out 0.5s; }
+    .nav-list__link:hover {
+      color: #0f4c81;
+      animation: fading 1s ease-out 0s; }
+      .nav-list__link:hover::after {
+        transform: scale(1, 1); }
+
+@keyframes fading {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
 
 * {
   box-sizing: border-box;

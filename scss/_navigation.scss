@@ -31,5 +31,30 @@ header {
     font-weight: 700;
     color: $text-light;
     text-transform: uppercase;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: $my-hover;
+      position: absolute;
+      bottom: -0.6rem;
+      left: 0;
+      right: 0;
+      // opacity: 0;
+      transform: scale(0, 1);
+      transform-origin: left;
+      transition: transform ease-in-out 0.5s;
+    }
+
+    &:hover {
+      color: $my-hover;
+      animation: fading 1s ease-out 0s;
+      &::after {
+        // opacity: 1;
+        transform: scale(1, 1);
+      }
+    }
   }
 }
