@@ -1,3 +1,54 @@
 @import url("https://fonts.googleapis.com/css?family=Francois+One|Ramabhadra&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Crafty+Girls|Indie+Flower|Just+Another+Hand|Lakki+Reddy|Mansalva|Nanum+Gothic|Parisienne|Rock+Salt|Sacramento|Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+header {
+  padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f42; }
+
+.brand {
+  padding-left: 3.5rem; }
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding-right: 1.5rem; }
+  .nav-list__item {
+    padding: 0.8rem 1rem; }
+  .nav-list__link {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #ffc5bb; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.logo {
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1rem; }
+  .logo span {
+    font-size: 0.9rem;
+    color: #0f4c81; }

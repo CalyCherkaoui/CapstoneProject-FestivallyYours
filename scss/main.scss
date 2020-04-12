@@ -1,4 +1,34 @@
 @import url("https://fonts.googleapis.com/css?family=Francois+One|Ramabhadra&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Crafty+Girls|Indie+Flower|Just+Another+Hand|Lakki+Reddy|Mansalva|Nanum+Gothic|Parisienne|Rock+Salt|Sacramento|Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import "config";
+@import "navigation";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $secondary;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-family: $logo1;
+  letter-spacing: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: $text-light;
+  line-height: 1rem;
+  span {
+    font-size: 0.9rem;
+    color: $classic-blue;
+  }
+}
