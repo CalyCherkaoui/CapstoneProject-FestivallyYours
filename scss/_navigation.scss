@@ -12,17 +12,17 @@ header {
 
 .nav-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  padding-right: 1.5rem;
+  // padding-right: 1.5rem;
 
   &__item {
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 0.6rem;
   }
 
   &__link {
@@ -55,6 +55,32 @@ header {
         // opacity: 1;
         transform: scale(1, 1);
       }
+    }
+  }
+}
+
+.hamburger-btn {
+  padding: 0.8rem 1rem;
+  .hamburger-btn__line {
+    width: 2.2rem;
+    height: 3px;
+    background: $text-light;
+    border-radius: 3px;
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2.2rem;
+      height: 3px;
+      background: $text-light;
+      border-radius: 3px;
+    }
+    &::before {
+      transform: translateY(-8px);
+    }
+    &::after {
+      transform: translateY(8px);
     }
   }
 }

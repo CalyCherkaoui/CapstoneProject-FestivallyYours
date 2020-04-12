@@ -14,15 +14,14 @@ header {
 
 .nav-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center; }
 
 .nav-list {
   list-style: none;
-  display: flex;
-  padding-right: 1.5rem; }
+  display: flex; }
   .nav-list__item {
-    padding: 0.8rem 1rem; }
+    padding: 0.8rem 0.6rem; }
   .nav-list__link {
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
@@ -47,6 +46,26 @@ header {
       animation: fading 1s ease-out 0s; }
       .nav-list__link:hover::after {
         transform: scale(1, 1); }
+
+.hamburger-btn {
+  padding: 0.8rem 1rem; }
+  .hamburger-btn .hamburger-btn__line {
+    width: 2.2rem;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer; }
+    .hamburger-btn .hamburger-btn__line::before, .hamburger-btn .hamburger-btn__line::after {
+      content: "";
+      position: absolute;
+      width: 2.2rem;
+      height: 3px;
+      background: white;
+      border-radius: 3px; }
+    .hamburger-btn .hamburger-btn__line::before {
+      transform: translateY(-8px); }
+    .hamburger-btn .hamburger-btn__line::after {
+      transform: translateY(8px); }
 
 @keyframes fading {
   0% {
