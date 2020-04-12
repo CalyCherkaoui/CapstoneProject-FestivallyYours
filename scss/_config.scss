@@ -1,0 +1,66 @@
+// color palette
+$primary: #f42;
+$secondary: lighten($primary, 40%);
+$text-light: white;
+$text-shade: lighten(grey, 40%);
+$text-dark: #272727;
+
+// other colors for use
+
+$classic-blue: #0f4c81;
+$tangerine: #da4221;
+$my-black: #272727;
+$my-orange: #ff652f;
+$my-light-blue: #2ab2c0;
+$my-light-orange: #f8a036;
+
+//typography
+
+// font-family: 'Nanum Gothic', sans-serif;
+// font-family: 'Sacramento', cursive;
+// font-family: 'Parisienne', cursive;
+// font-family: 'Rock Salt', cursive;
+// font-family: 'Indie Flower', cursive;
+// font-family: 'Just Another Hand', cursive;
+// font-family: 'Crafty Girls', cursive;
+// font-family: 'Mansalva', cursive;
+// font-family: 'Sedgwick Ave Display', cursive;
+// font-family: 'Lakki Reddy', cursive;
+
+$capital: "Ramabhadra", sans-serif;
+$capital-accent: "Roboto Condensed", sans-serif;
+$text-regular: "Roboto", sans-serif;
+$logo1: "Rock Salt", cursive;
+$logo2: "Sedgwick Ave Display", cursive;
+
+// animation
+
+@mixin ease-out {
+  transition: all 0.5s ease-out;
+}
+
+//media queries
+
+@mixin small-mobile {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablette {
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
