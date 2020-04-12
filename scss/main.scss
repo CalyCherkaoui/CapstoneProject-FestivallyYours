@@ -27,7 +27,6 @@ a {
 .logo {
   font-family: $logo1;
   letter-spacing: 0.25rem;
-  font-size: 1.5rem;
   font-weight: 800;
   color: $text-light;
   line-height: 1rem;
@@ -41,8 +40,12 @@ a {
 main {
   .search {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &::before {
       content: "";

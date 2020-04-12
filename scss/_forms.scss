@@ -1,0 +1,24 @@
+.hero-title {
+  width: 50%;
+  padding-bottom: 1rem;
+
+  p {
+    font-family: $capital-accent;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $text-light;
+    padding-right: 1rem;
+    letter-spacing: 0.15rem;
+  }
+}
+
+.form-container {
+  width: 55%;
+  height: 10rem;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -9,8 +9,10 @@ header {
   align-items: center;
   background-color: #f42; }
 
-.brand {
-  padding-left: 3.5rem; }
+.brand-nav {
+  padding-left: 3.5rem;
+  font-size: 1.5rem;
+  display: inline; }
 
 .nav-wrapper {
   display: flex;
@@ -81,6 +83,27 @@ header {
   100% {
     opacity: 1; } }
 
+.hero-title {
+  width: 50%;
+  padding-bottom: 1rem; }
+  .hero-title p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: white;
+    padding-right: 1rem;
+    letter-spacing: 0.15rem; }
+
+.form-container {
+  width: 55%;
+  height: 10rem;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 *,
 *::after,
 *::before {
@@ -98,7 +121,6 @@ a {
 .logo {
   font-family: "Rock Salt", cursive;
   letter-spacing: 0.25rem;
-  font-size: 1.5rem;
   font-weight: 800;
   color: white;
   line-height: 1rem; }
@@ -108,8 +130,12 @@ a {
 
 main .search {
   width: 100%;
-  height: 60vh;
-  position: relative; }
+  height: 70vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   main .search::before {
     content: "";
     width: 100%;

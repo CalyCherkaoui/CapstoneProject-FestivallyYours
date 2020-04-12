@@ -6,8 +6,10 @@ header {
   background-color: $primary;
 }
 
-.brand {
+.brand-nav {
   padding-left: 3.5rem;
+  font-size: 1.5rem;
+  display: inline;
 }
 
 .nav-wrapper {
@@ -51,6 +53,7 @@ header {
     &:hover {
       color: $my-hover;
       animation: fading 1s ease-out 0s;
+
       &::after {
         // opacity: 1;
         transform: scale(1, 1);
@@ -61,12 +64,14 @@ header {
 
 .hamburger-btn {
   padding: 0.8rem 1rem;
+
   .hamburger-btn__line {
     width: 2.2rem;
     height: 3px;
     background: $text-light;
     border-radius: 3px;
     cursor: pointer;
+
     &::before,
     &::after {
       content: "";
@@ -76,9 +81,11 @@ header {
       background: $text-light;
       border-radius: 3px;
     }
+
     &::before {
       transform: translateY(-8px);
     }
+
     &::after {
       transform: translateY(8px);
     }
