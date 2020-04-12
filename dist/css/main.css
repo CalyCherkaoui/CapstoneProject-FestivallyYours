@@ -66,6 +66,8 @@ header {
       transform: translateY(-8px); }
     .hamburger-btn .hamburger-btn__line::after {
       transform: translateY(8px); }
+  .hamburger-btn.open {
+    background-color: black; }
 
 @keyframes fading {
   0% {
@@ -79,7 +81,9 @@ header {
   100% {
     opacity: 1; } }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
@@ -101,3 +105,30 @@ a {
   .logo span {
     font-size: 0.9rem;
     color: #0f4c81; }
+
+main .search {
+  width: 100%;
+  height: 60vh;
+  position: relative; }
+  main .search::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    background: url(/dist/image/searchBackground3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    left: 0;
+    z-index: -1; }
+  main .search::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    background: black;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1; }

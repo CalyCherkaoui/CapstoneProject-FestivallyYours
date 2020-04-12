@@ -83,4 +83,8 @@ header {
       transform: translateY(8px);
     }
   }
+
+  &.open {
+    background-color: black;
+  }
 }
