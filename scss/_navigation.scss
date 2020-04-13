@@ -40,7 +40,7 @@ header {
       content: "";
       display: block;
       height: 3px;
-      background-color: $my-hover;
+      background-color: $nav-hover;
       position: absolute;
       bottom: -0.6rem;
       left: 0;
@@ -52,7 +52,7 @@ header {
     }
 
     &:hover {
-      color: $my-hover;
+      color: $nav-hover;
       animation: fading 1s ease-out 0s;
 
       &::after {

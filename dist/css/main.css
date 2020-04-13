@@ -36,7 +36,7 @@ header {
       content: "";
       display: block;
       height: 3px;
-      background-color: #0f4c81;
+      background-color: white;
       position: absolute;
       bottom: -0.6rem;
       left: 0;
@@ -45,7 +45,7 @@ header {
       transform-origin: left;
       transition: transform ease-in-out 0.5s; }
     .nav-list__link:hover {
-      color: #0f4c81;
+      color: white;
       animation: fading 1s ease-out 0s; }
       .nav-list__link:hover::after {
         transform: scale(1, 1); }
@@ -123,7 +123,7 @@ a {
 
 .logo {
   font-family: "Rock Salt", cursive;
-  letter-spacing: 0.25rem;
+  letter-spacing: normal;
   font-weight: 800;
   line-height: 1rem; }
   .logo span {
@@ -267,3 +267,19 @@ a {
         border-radius: 50%;
         width: 20rem;
         height: 20rem; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.footer-top {
+  background-color: yellow;
+  width: 100%; }
+
+.footer-mid {
+  background-color: honeydew;
+  width: 100%; }
+
+.footer-btm {
+  background-color: hotpink; }

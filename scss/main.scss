@@ -26,7 +26,7 @@ a {
 
 .logo {
   font-family: $logo1;
-  letter-spacing: 0.25rem;
+  letter-spacing: normal;
   font-weight: 800;
   line-height: 1rem;
 
@@ -220,4 +220,24 @@ a {
       }
     }
   }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-top {
+  background-color: yellow;
+  width: 100%;
+}
+
+.footer-mid {
+  background-color: honeydew;
+  width: 100%;
+}
+
+.footer-btm {
+  background-color: hotpink;
 }
