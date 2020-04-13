@@ -161,21 +161,38 @@ a {
     z-index: -1; }
 
 .guide {
-  background-color: yellow;
   width: 100%;
   height: auto;
   padding: 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 4rem;
+  grid-gap: 2rem;
   grid-auto-flow: dense; }
   .guide-item {
-    background-color: lightcoral;
     width: 40vw;
-    height: 50vh;
-    place-self: center; }
-    .guide-item .material-icons {
-      font-size: 3rem; }
+    height: 40vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr; }
     .guide-item__icon {
       font-size: 3rem;
-      font-weight: 400; }
+      font-weight: 400;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-self: center; }
+    .guide-item__title {
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      display: flex;
+      justify-content: center;
+      align-self: center; }
+    .guide-item__text {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 200;
+      text-align: center;
+      padding-top: 2.5rem;
+      padding-left: 5rem;
+      padding-right: 5rem; }
