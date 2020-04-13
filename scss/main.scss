@@ -229,8 +229,60 @@ footer {
 }
 
 .footer-top {
-  background-color: yellow;
+  background-color: $footer-dark;
   width: 100%;
+  padding: 0.5rem 4%;
+
+  .footer-list {
+    // background-color: indianred;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 8rem) 7rem repeat(4, 9rem);
+
+    &__item {
+      @include self-center;
+      flex-wrap: nowrap;
+      border: solid 1px rgba($color: $text-light, $alpha:0.2);
+
+      &:nth-of-type(1) {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+
+      &:nth-of-type(9) {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+
+      &:nth-of-type(5) {
+        border-radius: 50%;
+      }
+    }
+
+    &__link {
+      color: rgba($color: $text-light, $alpha:0.7);
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-family: $navigation-font;
+      font-weight: 500;
+      padding: 0.6rem;
+      overflow: hidden;
+      white-space: nowrap;
+      @include self-center;
+
+      i {
+        font-size: 3rem;
+        padding: 1.5rem;
+      }
+
+      &:hover {
+        animation: fading 1s ease-out 0s;
+      }
+    }
+  }
 }
 
 .footer-mid {

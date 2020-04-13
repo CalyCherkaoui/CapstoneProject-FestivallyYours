@@ -2,6 +2,8 @@
   width: 50%;
   padding-bottom: 1rem;
   color: $text-light;
+  overflow: hidden;
+  white-space: nowrap;
 
   p {
     font-family: $capital-accent;
