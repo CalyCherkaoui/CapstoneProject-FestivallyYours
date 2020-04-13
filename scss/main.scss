@@ -120,3 +120,87 @@ a {
   }
 
 }
+
+.landing {
+  // background-color: coral;
+  width: 100%;
+  height: 170vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  #rib1 {
+    background-color: lighten($color:$primary, $amount: 10%);
+
+    .landing-link {
+      color: lighten($color:$primary, $amount: 10%);
+    }
+  }
+
+  #rib2 {
+    background-color: darken($text-shade, 25%);
+
+    .landing-link {
+      color: darken($text-shade, 25%);
+      ;
+    }
+  }
+
+  #rib3 {
+    background-color: lighten($classic-blue, $amount: 15%);
+  }
+
+  .landing-section {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    &__content {
+      padding: 0 7%;
+      @include self-center;
+      flex-direction: column;
+
+
+      .landing-title {
+        color: $text-light;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        font-family: $text-regular;
+      }
+
+      .landing-text {
+        font-family: $text-regular;
+        color: $text-light;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .landing-link {
+        width: fit-content;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        font-family: $text-regular;
+        font-size: 1.2rem;
+        font-weight: 500;
+        background-color: rgba($color: $text-light, $alpha:0.7);
+        border-radius: 3px;
+      }
+    }
+
+    &__img {
+      // background-color: white;
+      width: 100%;
+      object-fit: fill;
+      overflow: hidden;
+      @include self-center;
+
+      img {
+        border-radius: 50%;
+        width: 25rem;
+        height: 25rem;
+      }
+    }
+  }
+}
