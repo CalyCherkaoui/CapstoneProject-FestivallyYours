@@ -12,6 +12,7 @@ header {
 .brand-nav {
   padding-left: 3.5rem;
   font-size: 1.5rem;
+  color: white;
   display: inline; }
 
 .nav-wrapper {
@@ -85,7 +86,8 @@ header {
 
 .hero-title {
   width: 50%;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  color: white; }
   .hero-title p {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 900;
@@ -123,11 +125,26 @@ a {
   font-family: "Rock Salt", cursive;
   letter-spacing: 0.25rem;
   font-weight: 800;
-  color: white;
   line-height: 1rem; }
   .logo span {
     font-size: 0.9rem;
     color: #0f4c81; }
+
+.separator {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem; }
+  .separator-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 1rem; }
+  .separator .logo {
+    font-size: 1.3rem;
+    letter-spacing: normal;
+    padding: 0 1rem;
+    text-align: end; }
 
 .search {
   width: 100%;
@@ -162,15 +179,14 @@ a {
 
 .guide {
   width: 100%;
-  height: auto;
-  padding: 6rem;
+  padding: 1rem 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   grid-auto-flow: dense; }
   .guide-item {
     width: 40vw;
-    height: 40vh;
+    height: 45vh;
     overflow: hidden;
     display: grid;
     grid-template-rows: 1fr 1fr 4fr; }
@@ -249,5 +265,5 @@ a {
       align-self: center; }
       .landing .landing-section__img img {
         border-radius: 50%;
-        width: 25rem;
-        height: 25rem; }
+        width: 20rem;
+        height: 20rem; }

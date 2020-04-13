@@ -28,12 +28,34 @@ a {
   font-family: $logo1;
   letter-spacing: 0.25rem;
   font-weight: 800;
-  color: $text-light;
   line-height: 1rem;
 
   span {
     font-size: 0.9rem;
     color: $classic-blue;
+  }
+}
+
+.separator {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  // background-color: yellow;
+  padding: 2rem;
+
+  &-text {
+    font-family: $text-regular;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 1rem;
+    // color: $secondary;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    letter-spacing: normal;
+    padding: 0 1rem;
+    text-align: end;
   }
 }
 
@@ -76,8 +98,7 @@ a {
 .guide {
   // background-color: yellow;
   width: 100%;
-  height: auto;
-  padding: 6rem;
+  padding: 1rem 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
@@ -86,7 +107,7 @@ a {
   &-item {
     // background-color: lightcoral;
     width: 40vw;
-    height: 40vh;
+    height: 45vh;
     overflow: hidden;
     display: grid;
     grid-template-rows: 1fr 1fr 4fr;
@@ -150,10 +171,6 @@ a {
   }
 
   .landing-section {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-
     display: grid;
     grid-template-columns: 2fr 1fr;
 
@@ -198,8 +215,8 @@ a {
 
       img {
         border-radius: 50%;
-        width: 25rem;
-        height: 25rem;
+        width: 20rem;
+        height: 20rem;
       }
     }
   }
