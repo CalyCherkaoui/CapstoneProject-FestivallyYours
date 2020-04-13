@@ -394,4 +394,21 @@ footer {
             background-color: rgba(128, 128, 128, 0.1); }
 
 .footer-btm {
-  background-color: hotpink; }
+  background-color: #272727;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer-btm__icons {
+    font-size: 1.2rem;
+    color: #e6e6e6; }
+    .footer-btm__icons a {
+      margin-left: 0.3rem; }
+      .footer-btm__icons a:hover {
+        animation: fading 1s ease-out 0s; }
+  .footer-btm__copyright {
+    font-size: 0.8rem;
+    color: #e6e6e6; }
+    .footer-btm__copyright a:hover {
+      animation: fading 1s ease-out 0.1s; }
