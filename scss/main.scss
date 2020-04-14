@@ -537,11 +537,28 @@ a {
   background-color: $footer-dark;
   width: 100%;
   height: 15vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-right: 2rem;
-  padding-left: 2rem;
-  grid-column-gap: 2rem;
+  display: none;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // padding-right: 2rem;
+  // padding-left: 2rem;
+  // grid-column-gap: 2rem;
+
+  @include tablette {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 2rem;
+    padding-left: 2rem;
+    grid-column-gap: 2rem;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 2rem;
+    padding-left: 2rem;
+    grid-column-gap: 2rem;
+  }
 
   &-element {
     display: grid;
@@ -654,4 +671,5 @@ a {
       animation: fading 1s ease-out 0.1s;
     }
   }
+
 }
