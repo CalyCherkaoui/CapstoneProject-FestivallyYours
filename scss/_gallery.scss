@@ -1,6 +1,10 @@
 .results {
   &-head {
     text-align: center;
+    // background-color: yellow;
+    font-size: 2rem;
+    font-family: $capital;
+    color: $footer-light;
   }
 
   &-gallery {

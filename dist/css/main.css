@@ -204,7 +204,7 @@ header {
       font-weight: 700;
       line-height: normal;
       border: none;
-      border-radius: 5px;
+      border-radius: 3px;
       box-shadow: none;
       transition-duration: 0.4s; }
       .filter-form button:focus {
@@ -223,7 +223,10 @@ header {
         transition: all 0.5s ease-out; }
 
 .results-head {
-  text-align: center; }
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Ramabhadra", sans-serif;
+  color: #272727; }
 
 .results-gallery {
   position: relative;
