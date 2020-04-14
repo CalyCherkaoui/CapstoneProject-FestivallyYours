@@ -48,6 +48,7 @@ a {
   letter-spacing: normal;
   font-weight: 800;
   line-height: 1.9rem;
+  overflow: hidden;
 
   span {
     font-size: 0.9rem;
@@ -61,18 +62,17 @@ a {
   margin-left: auto;
   margin-right: auto;
   // background-color: yellow;
-  padding: 2rem;
+  padding: 0 2rem 1rem 2rem;
 
   &-text {
     font-family: $text-regular;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 300;
-    padding: 1rem;
-    // color: $secondary;
+    padding: 0.6rem;
   }
 
   .logo {
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: normal;
     padding: 0 1rem;
     text-align: end;
@@ -81,14 +81,24 @@ a {
 
 .search {
   width: 100%;
-  height: 70vh;
+  height: 65vh;
   position: relative;
   display: grid;
-  grid-template-rows: 1fr 2fr;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  grid-template-columns: 1fr 2.5fr 1fr;
   grid-template-areas:
     ". hero ."
     ". form .";
+
+  @include tablette {
+    @include ease-out;
+    height: 35vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "form";
+  }
 
   .hero-title {
     // background-color: red;
@@ -100,50 +110,74 @@ a {
     justify-content: start;
     padding-bottom: 1rem;
 
+
+
     p {
       font-family: $capital-accent;
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: $text-light;
       // padding-right: 1rem;
-      letter-spacing: 0.06rem;
+      letter-spacing: normal;
+      overflow: hidden;
 
       .logo {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        overflow: hidden;
+      }
+
+      @include tablette {
+        font-family: $capital-accent;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $text-light;
+        text-align: center;
       }
     }
   }
 
   .form-container {
     grid-area: form;
-    width: 90%;
-    height: 10rem;
-    border-radius: 5px;
+    width: 100%;
+    height: 7rem;
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
+    padding: 0 2rem;
     position: relative;
     z-index: 1;
+
+    @include tablette {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      box-shadow: 0 0.5px 1rem rgba(0, 0, 0, 0.2);
+    }
 
     &::before {
       content: "";
       width: 100%;
-      height: 10rem;
+      height: 7rem;
       background-color: white;
       opacity: 0.7;
-      border-radius: 5px;
+      border-radius: 3px;
       position: absolute;
       top: 0;
       left: 0;
       z-index: 0;
+
+      @include tablette {
+        opacity: 1;
+
+      }
     }
 
 
     h2 {
       text-transform: uppercase;
       font-family: $text-regular;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: 700;
       color: $text-dark;
       padding-bottom: 0.5rem;
@@ -154,24 +188,23 @@ a {
     form {
       // background-color: red;
       width: 100%;
-      // @include self-center;
       display: inline-flex;
       z-index: 2;
 
       input[type=text] {
         padding-left: 1rem;
-        height: 2.5rem;
+        height: 2rem;
         width: 100%;
-        border: solid 1px $text-grey;
-        outline-color: opacify($color: $text-shade, $amount: 0.7);
-        outline-width: 0.5px;
+        border: solid 0.5px $text-grey;
+        // outline-color: opacify($color: $text-shade, $amount: 0.7);
+        outline: none;
         background: transparent;
         padding: 0.4rem 0;
         text-align: center;
         z-index: 2;
 
         &::placeholder {
-          font-size: 1rem;
+          font-size: 0.9rem;
           color: $text-grey;
           font-family: $text-regular;
           font-weight: 300;
@@ -182,9 +215,9 @@ a {
 
       button {
         width: 30%;
-        height: 2.5rem;
+        height: 2rem;
         font-size: 0.9rem;
-        color: $text-shade;
+        color: $text-light;
         font-family: $text-regular;
         text-transform: uppercase;
         font-weight: 700;
@@ -234,54 +267,71 @@ a {
 .guide {
   // background-color: yellow;
   width: 100%;
-  padding: 1rem 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  // grid-column-gap: 0rem;
+  justify-items: center;
   grid-auto-flow: dense;
+
+  @include tablette {
+    grid-template-columns: 1fr;
+  }
 
   &-item {
     // background-color: lightcoral;
     width: 40vw;
-    height: 45vh;
+    // height: 30vh;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr 3fr;
+
+    @include tablette {
+      width: 70vw;
+      grid-template-rows: 1fr 1fr 2fr;
+    }
 
     &__icon {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 400;
       // background-color: brown;
-      padding: 1rem;
+      // padding: 0.5rem;
       @include self-center;
+
+      i {
+        padding: 0.5rem;
+      }
     }
 
     &__title {
       // background-color: blue;
+      font-size: 1rem;
       font-family: $navigation-font;
       text-transform: uppercase;
-      letter-spacing: 0.2rem;
+      letter-spacing: 0.1rem;
       @include self-center;
     }
 
     &__text {
       // background-color: wheat;
       font-family: $text-regular;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
       font-weight: 200;
+      color: $text-dark;
       text-align: center;
-      padding-top: 2.5rem;
-      padding-left: 5rem;
-      padding-right: 5rem;
-    }
-  }
+      padding: 0 2rem;
 
+      @include tablette {
+        padding: 0.5rem;
+      }
+    }
+
+  }
 }
 
 .landing {
   // background-color: coral;
   width: 100%;
-  height: 170vh;
+  height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 
@@ -318,27 +368,31 @@ a {
 
       .landing-title {
         color: $text-light;
-        margin-bottom: 1.5rem;
-        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
         font-family: $text-regular;
       }
 
       .landing-text {
         font-family: $text-regular;
         color: $text-light;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
       }
 
       .landing-link {
-        width: fit-content;
-        margin-top: 1.5rem;
-        padding: 1rem;
+        width: 5rem;
+        margin-top: 1rem;
+        padding: 0.5rem;
         font-family: $text-regular;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
         background-color: rgba($color: $text-light, $alpha:0.7);
         border-radius: 3px;
+
+        &:hover {
+          animation: fading 1s ease-out 0s;
+        }
       }
     }
 
@@ -351,8 +405,8 @@ a {
 
       img {
         border-radius: 50%;
-        width: 20rem;
-        height: 20rem;
+        width: 12rem;
+        height: 12rem;
       }
     }
   }
@@ -361,17 +415,18 @@ a {
 .footer-top {
   background-color: $footer-dark;
   width: 100%;
-  padding: 0.5rem 4%;
-  @include self-center;
+  padding: 1rem 4%;
+  // @include self-center;
+  // text-align: center;
 
   .footer-list {
     // background-color: indianred;
-    width: fit-content;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, 8rem) 7rem repeat(4, 9rem);
+    grid-template-columns: repeat(4, 1fr) 4rem repeat(4, 1fr);
 
     &__item {
       @include self-center;
@@ -408,17 +463,16 @@ a {
     &__link {
       color: rgba($color: $text-light, $alpha:0.7);
       text-transform: uppercase;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-family: $navigation-font;
       font-weight: 500;
-      padding: 0.6rem;
+      padding: 0.5rem 0;
       overflow: hidden;
       white-space: nowrap;
       @include self-center;
 
       i {
-        font-size: 3rem;
-        padding: 1.5rem;
+        font-size: 2.5rem;
       }
 
       &:hover {
@@ -431,7 +485,7 @@ a {
 .footer-mid {
   background-color: $footer-dark;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-right: 2rem;
@@ -448,7 +502,7 @@ a {
 
     &__title {
       @include self-center;
-      font-size: 1.3rem;
+      font-size: 1rem;
       color: $text-light;
       font-family: $text-regular;
       font-weight: 300;
@@ -466,8 +520,8 @@ a {
         font-size: 0.8rem;
         color: $text-light;
         font-family: $text-regular;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
 
         a {
           color: $secondary;
