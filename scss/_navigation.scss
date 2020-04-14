@@ -11,9 +11,23 @@ header {
 .brand-nav {
   height: 2rem;
   padding-left: 3.5rem;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   color: $text-light;
-  @include self-center;
+
+
+  @include tablette {
+    @include ease-out;
+    font-size: 1.3rem;
+    height: 2rem;
+    padding-left: 3.5rem;
+    @include self-center;
+  }
+
+  @include desktop {
+    font-size: 1.3rem;
+    height: 2rem;
+    padding-left: 3.5rem;
+  }
 }
 
 .nav-wrapper {
@@ -24,7 +38,15 @@ header {
 
 .nav-list {
   list-style: none;
-  display: flex;
+  display: none;
+
+  @include tablette {
+    display: flex;
+  }
+
+  @include desktop {
+    display: flex;
+  }
 
   &__item {
     padding: 0.8rem 0.6rem;

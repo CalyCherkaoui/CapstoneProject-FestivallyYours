@@ -81,23 +81,29 @@ a {
 
 .search {
   width: 100%;
-  height: 65vh;
+  height: 35vh;
   position: relative;
   display: grid;
-  grid-template-rows: 1fr 1.5fr;
-  grid-template-columns: 1fr 2.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    ". hero ."
-    ". form .";
+    "hero"
+    "form";
+  @include ease-out;
+
+  @include desktop {
+    height: 65vh;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-areas:
+      ". hero ."
+      ". form .";
+    @include ease-out;
+  }
 
   @include tablette {
+    height: 45vh;
     @include ease-out;
-    height: 35vh;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "hero"
-      "form";
   }
 
   .hero-title {
@@ -114,31 +120,40 @@ a {
 
     p {
       font-family: $capital-accent;
-      font-weight: 700;
-      font-size: 1.2rem;
+      font-weight: 400;
+      font-size: 0.8rem;
       color: $text-light;
-      // padding-right: 1rem;
       letter-spacing: normal;
       overflow: hidden;
+      text-align: center;
 
       .logo {
-        font-size: 1rem;
+        font-size: 0.9rem;
         overflow: hidden;
+
+        @include desktop {
+          font-size: 1rem;
+          @include ease-out;
+        }
+      }
+
+      @include desktop {
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-align: left;
       }
 
       @include tablette {
-        font-family: $capital-accent;
         font-weight: 600;
         font-size: 1rem;
         color: $text-light;
-        text-align: center;
       }
     }
   }
 
   .form-container {
     grid-area: form;
-    width: 100%;
+    width: 80%;
     height: 7rem;
     border-radius: 3px;
     display: flex;
@@ -147,12 +162,12 @@ a {
     padding: 0 2rem;
     position: relative;
     z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 0.5px 1rem rgba(0, 0, 0, 0.2);
 
-    @include tablette {
-      width: 80%;
-      margin-right: auto;
-      margin-left: auto;
-      box-shadow: 0 0.5px 1rem rgba(0, 0, 0, 0.2);
+    @include desktop {
+      width: 100%;
     }
 
     &::before {
@@ -160,15 +175,15 @@ a {
       width: 100%;
       height: 7rem;
       background-color: white;
-      opacity: 0.7;
+      opacity: 1;
       border-radius: 3px;
       position: absolute;
       top: 0;
       left: 0;
       z-index: 0;
 
-      @include tablette {
-        opacity: 1;
+      @include desktop {
+        opacity: 0.7;
 
       }
     }
@@ -268,25 +283,27 @@ a {
   // background-color: yellow;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  // grid-column-gap: 0rem;
+  grid-template-columns: 1fr;
   justify-items: center;
   grid-auto-flow: dense;
 
-  @include tablette {
-    grid-template-columns: 1fr;
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
   }
 
   &-item {
     // background-color: lightcoral;
-    width: 40vw;
-    // height: 30vh;
     overflow: hidden;
     display: grid;
+    width: 70vw;
     grid-template-rows: 1fr 1fr 3fr;
 
+    @include desktop {
+      width: 40vw;
+    }
+
     @include tablette {
-      width: 70vw;
+      @include ease-out;
       grid-template-rows: 1fr 1fr 2fr;
     }
 
@@ -294,7 +311,6 @@ a {
       font-size: 2rem;
       font-weight: 400;
       // background-color: brown;
-      // padding: 0.5rem;
       @include self-center;
 
       i {
@@ -314,14 +330,19 @@ a {
     &__text {
       // background-color: wheat;
       font-family: $text-regular;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: 200;
       color: $text-dark;
       text-align: center;
       padding: 0 2rem;
 
+      @include desktop {
+        font-size: 0.9rem;
+      }
+
       @include tablette {
         padding: 0.5rem;
+        font-size: 0.9rem;
       }
     }
 
@@ -334,6 +355,14 @@ a {
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+
+  // @include tablette {
+  //   grid-template-rows: 1fr 1fr 1fr;
+  // }
+
+  // @include desktop {
+  //   grid-template-rows: 1fr 1fr 1fr;
+  // }
 
   #rib1 {
     background-color: lighten($color:$primary, $amount: 10%);
@@ -359,6 +388,16 @@ a {
   .landing-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
+
+    // @include desktop {
+    //   grid-template-columns: 2fr 1fr;
+    //   grid-template-rows: auto;
+    // }
+
+    // @include tablette {
+    //   grid-template-columns: 2fr 1fr;
+    //   grid-template-rows: auto;
+    // }
 
     &__content {
       padding: 0 7%;
@@ -407,6 +446,18 @@ a {
         border-radius: 50%;
         width: 12rem;
         height: 12rem;
+
+        // @include tablette {
+        //   width: 10rem;
+        //   height: 10rem;
+        //   border-radius: 50%;
+        // }
+
+        // @include desktop {
+        //   width: 12rem;
+        //   height: 12rem;
+        //   border-radius: 50%;
+        // }
       }
     }
   }
