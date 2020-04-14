@@ -13,6 +13,7 @@ header {
   padding-left: 3.5rem;
   font-size: 0.9rem;
   color: $text-light;
+  overflow: hidden;
 
 
   @include tablette {

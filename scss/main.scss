@@ -36,6 +36,7 @@ footer {
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-color: $footer-dark;
 }
 
 a {
@@ -386,18 +387,21 @@ a {
   }
 
   .landing-section {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: column-reverse;
 
-    // @include desktop {
-    //   grid-template-columns: 2fr 1fr;
-    //   grid-template-rows: auto;
-    // }
 
-    // @include tablette {
-    //   grid-template-columns: 2fr 1fr;
-    //   grid-template-rows: auto;
-    // }
+    @include desktop {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
+    }
+
+    @include tablette {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
+    }
 
     &__content {
       padding: 0 7%;
@@ -408,26 +412,64 @@ a {
       .landing-title {
         color: $text-light;
         margin-bottom: 1rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-family: $text-regular;
+        text-align: center;
+
+        @include desktop {
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+          text-align: left;
+        }
+
+        @include tablette {
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+          text-align: left;
+        }
       }
 
       .landing-text {
         font-family: $text-regular;
         color: $text-light;
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-weight: 500;
+
+        @include desktop {
+          font-size: 1rem;
+        }
+
+        @include tablette {
+          font-size: 1rem;
+        }
       }
 
       .landing-link {
-        width: 5rem;
-        margin-top: 1rem;
-        padding: 0.5rem;
+        width: 3rem;
+        margin-top: 0.8rem;
+        padding: 0.3rem;
         font-family: $text-regular;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 500;
         background-color: rgba($color: $text-light, $alpha:0.7);
         border-radius: 3px;
+        text-align: center;
+
+        @include desktop {
+          width: 5rem;
+          margin-top: 1rem;
+          padding: 0.5rem;
+          font-size: 1rem;
+          text-align: left;
+        }
+
+        @include tablette {
+          width: 5rem;
+          margin-top: 1rem;
+          padding: 0.5rem;
+          font-size: 1rem;
+          text-align: left;
+        }
 
         &:hover {
           animation: fading 1s ease-out 0s;
@@ -443,21 +485,21 @@ a {
       @include self-center;
 
       img {
-        border-radius: 50%;
+
         width: 12rem;
         height: 12rem;
 
-        // @include tablette {
-        //   width: 10rem;
-        //   height: 10rem;
-        //   border-radius: 50%;
-        // }
+        @include tablette {
+          border-radius: 50%;
+          width: 12rem;
+          height: 12rem;
+        }
 
-        // @include desktop {
-        //   width: 12rem;
-        //   height: 12rem;
-        //   border-radius: 50%;
-        // }
+        @include desktop {
+          border-radius: 50%;
+          width: 12rem;
+          height: 12rem;
+        }
       }
     }
   }

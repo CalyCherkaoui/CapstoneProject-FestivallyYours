@@ -15,7 +15,8 @@ header {
   height: 2rem;
   padding-left: 3.5rem;
   font-size: 0.9rem;
-  color: white; }
+  color: white;
+  overflow: hidden; }
   @media screen and (min-width: 769px) and (max-width: 1023px) {
     .brand-nav {
       transition: all 0.5s ease-out;
@@ -129,7 +130,8 @@ footer {
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: black; }
 
 a {
   text-decoration: none;
@@ -383,8 +385,18 @@ a {
   .landing #rib3 {
     background-color: #1774c6; }
   .landing .landing-section {
-    display: grid;
-    grid-template-columns: 2fr 1fr; }
+    display: flex;
+    flex-direction: column-reverse; }
+    @media screen and (min-width: 1024px) {
+      .landing .landing-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto; } }
+    @media screen and (min-width: 769px) and (max-width: 1023px) {
+      .landing .landing-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto; } }
     .landing .landing-section__content {
       padding: 0 7%;
       display: flex;
@@ -394,22 +406,54 @@ a {
       .landing .landing-section__content .landing-title {
         color: white;
         margin-bottom: 1rem;
-        font-size: 1.5rem;
-        font-family: "Roboto", sans-serif; }
+        font-size: 1rem;
+        font-family: "Roboto", sans-serif;
+        text-align: center; }
+        @media screen and (min-width: 1024px) {
+          .landing .landing-section__content .landing-title {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            text-align: left; } }
+        @media screen and (min-width: 769px) and (max-width: 1023px) {
+          .landing .landing-section__content .landing-title {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            text-align: left; } }
       .landing .landing-section__content .landing-text {
         font-family: "Roboto", sans-serif;
         color: white;
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-weight: 500; }
+        @media screen and (min-width: 1024px) {
+          .landing .landing-section__content .landing-text {
+            font-size: 1rem; } }
+        @media screen and (min-width: 769px) and (max-width: 1023px) {
+          .landing .landing-section__content .landing-text {
+            font-size: 1rem; } }
       .landing .landing-section__content .landing-link {
-        width: 5rem;
-        margin-top: 1rem;
-        padding: 0.5rem;
+        width: 3rem;
+        margin-top: 0.8rem;
+        padding: 0.3rem;
         font-family: "Roboto", sans-serif;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 500;
         background-color: rgba(255, 255, 255, 0.7);
-        border-radius: 3px; }
+        border-radius: 3px;
+        text-align: center; }
+        @media screen and (min-width: 1024px) {
+          .landing .landing-section__content .landing-link {
+            width: 5rem;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            text-align: left; } }
+        @media screen and (min-width: 769px) and (max-width: 1023px) {
+          .landing .landing-section__content .landing-link {
+            width: 5rem;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            text-align: left; } }
         .landing .landing-section__content .landing-link:hover {
           animation: fading 1s ease-out 0s; }
     .landing .landing-section__img {
@@ -420,9 +464,18 @@ a {
       justify-content: center;
       align-self: center; }
       .landing .landing-section__img img {
-        border-radius: 50%;
         width: 12rem;
         height: 12rem; }
+        @media screen and (min-width: 769px) and (max-width: 1023px) {
+          .landing .landing-section__img img {
+            border-radius: 50%;
+            width: 12rem;
+            height: 12rem; } }
+        @media screen and (min-width: 1024px) {
+          .landing .landing-section__img img {
+            border-radius: 50%;
+            width: 12rem;
+            height: 12rem; } }
 
 .footer-top {
   background-color: black;
