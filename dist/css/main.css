@@ -123,7 +123,8 @@ header {
   width: 100%; }
 
 main {
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 footer {
   display: flex;
@@ -386,7 +387,9 @@ a {
     background-color: #1774c6; }
   .landing .landing-section {
     display: flex;
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-items: center; }
     @media screen and (min-width: 1024px) {
       .landing .landing-section {
         display: grid;
@@ -464,8 +467,9 @@ a {
       justify-content: center;
       align-self: center; }
       .landing .landing-section__img img {
-        width: 12rem;
-        height: 12rem; }
+        border-radius: 50%;
+        width: 7rem;
+        height: 7rem; }
         @media screen and (min-width: 769px) and (max-width: 1023px) {
           .landing .landing-section__img img {
             border-radius: 50%;

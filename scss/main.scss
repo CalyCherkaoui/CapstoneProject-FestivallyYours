@@ -28,6 +28,7 @@ header {
 
 main {
   width: 100%;
+  display: block;
 }
 
 footer {
@@ -389,7 +390,8 @@ a {
   .landing-section {
     display: flex;
     flex-direction: column-reverse;
-
+    justify-content: center;
+    justify-items: center;
 
     @include desktop {
       display: grid;
@@ -407,7 +409,6 @@ a {
       padding: 0 7%;
       @include self-center;
       flex-direction: column;
-
 
       .landing-title {
         color: $text-light;
@@ -485,9 +486,9 @@ a {
       @include self-center;
 
       img {
-
-        width: 12rem;
-        height: 12rem;
+        border-radius: 50%;
+        width: 7rem;
+        height: 7rem;
 
         @include tablette {
           border-radius: 50%;
