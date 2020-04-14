@@ -112,7 +112,7 @@ header {
 
 .results-gallery {
   position: relative;
-  height: auto;
+  height: fit-content;
   width: 90%;
   margin: auto;
   padding: 45px 0;
@@ -157,13 +157,15 @@ header {
       align-items: center; }
       .results-gallery__img-txt h1 {
         font-family: "Ramabhadra", sans-serif;
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.25rem;
+        line-height: 2rem;
         height: auto;
         overflow: hidden;
-        color: #f42; }
+        color: #f42;
+        text-transform: uppercase; }
       .results-gallery__img-txt p {
-        font-family: "Roboto", sans-serif; }
+        font-family: "Roboto", sans-serif;
+        font-size: 0.8rem; }
     .results-gallery__img:hover img {
       filter: brightness(1) grayscale(0); }
 

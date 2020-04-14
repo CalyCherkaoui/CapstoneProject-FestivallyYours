@@ -5,9 +5,8 @@
 
   &-gallery {
 
-
     position: relative;
-    height: auto;
+    height: fit-content;
     width: 90%;
     margin: auto;
     padding: 45px 0;
@@ -65,15 +64,17 @@
 
         h1 {
           font-family: $capital;
-          font-size: 2rem;
-          line-height: 2.5rem;
+          font-size: 1.25rem;
+          line-height: 2rem;
           height: auto;
           overflow: hidden;
           color: $primary;
+          text-transform: uppercase;
         }
 
         p {
           font-family: $text-regular;
+          font-size: 0.8rem;
         }
       }
 
