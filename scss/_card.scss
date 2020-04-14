@@ -154,3 +154,14 @@
   }
 
 }
+
+.text {
+  padding: 2rem;
+
+  p {
+    color: $text-grey;
+    font-family: $navigation-font;
+    font-size: 0.9rem;
+    padding: 2rem;
+  }
+}

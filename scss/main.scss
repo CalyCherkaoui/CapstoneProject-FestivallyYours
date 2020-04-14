@@ -522,11 +522,8 @@ a {
   background-color: $footer-dark;
   width: 100%;
   padding: 1rem 4%;
-  // @include self-center;
-  // text-align: center;
 
   .footer-list {
-    // background-color: indianred;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -552,6 +549,7 @@ a {
       }
 
       &:nth-of-type(5) {
+        padding: 0.5rem;
         border-radius: 50%;
       }
 
@@ -568,17 +566,36 @@ a {
 
     &__link {
       color: rgba($color: $text-light, $alpha:0.7);
-      text-transform: uppercase;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       font-family: $navigation-font;
-      font-weight: 500;
-      padding: 0.5rem 0;
+      font-weight: 300;
       overflow: hidden;
       white-space: nowrap;
       @include self-center;
+      padding: 0.4rem 0;
+
+      @include desktop {
+        font-size: 0.8rem;
+        padding: 0.5rem 0;
+        text-transform: uppercase;
+      }
+
+      @include tablette {
+        font-size: 0.8rem;
+        padding: 0.5rem 0;
+        text-transform: uppercase;
+      }
 
       i {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+
+        @include desktop {
+          font-size: 2.5rem;
+        }
+
+        @include tablette {
+          font-size: 2rem;
+        }
       }
 
       &:hover {

@@ -409,6 +409,14 @@ header {
         font-weight: 800;
         margin-left: 1rem; }
 
+.text {
+  padding: 2rem; }
+  .text p {
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    padding: 2rem; }
+
 *,
 *::after,
 *::before {
@@ -815,24 +823,40 @@ a {
         border-bottom-right-radius: 3px;
         border-left: none; }
       .footer-top .footer-list__item:nth-of-type(5) {
+        padding: 0.5rem;
         border-radius: 50%; }
       .footer-top .footer-list__item:nth-of-type(2), .footer-top .footer-list__item:nth-of-type(3), .footer-top .footer-list__item:nth-of-type(4), .footer-top .footer-list__item:nth-of-type(6), .footer-top .footer-list__item:nth-of-type(7), .footer-top .footer-list__item:nth-of-type(8) {
         border-right: none;
         border-left: none; }
     .footer-top .footer-list__link {
       color: rgba(255, 255, 255, 0.7);
-      text-transform: uppercase;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      padding: 0.5rem 0;
+      font-weight: 300;
       overflow: hidden;
       white-space: nowrap;
       display: flex;
       justify-content: center;
-      align-self: center; }
+      align-self: center;
+      padding: 0.4rem 0; }
+      @media screen and (min-width: 1024px) {
+        .footer-top .footer-list__link {
+          font-size: 0.8rem;
+          padding: 0.5rem 0;
+          text-transform: uppercase; } }
+      @media screen and (min-width: 769px) and (max-width: 1023px) {
+        .footer-top .footer-list__link {
+          font-size: 0.8rem;
+          padding: 0.5rem 0;
+          text-transform: uppercase; } }
       .footer-top .footer-list__link i {
-        font-size: 2.5rem; }
+        font-size: 1.5rem; }
+        @media screen and (min-width: 1024px) {
+          .footer-top .footer-list__link i {
+            font-size: 2.5rem; } }
+        @media screen and (min-width: 769px) and (max-width: 1023px) {
+          .footer-top .footer-list__link i {
+            font-size: 2rem; } }
       .footer-top .footer-list__link:hover {
         animation: fading 1s ease-out 0s; }
 
