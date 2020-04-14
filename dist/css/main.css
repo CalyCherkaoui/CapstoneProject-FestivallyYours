@@ -142,6 +142,28 @@ header {
       object-fit: cover;
       filter: brightness(0.5) grayscale(50);
       transition: all 0.5s ease-out; }
+    .results-gallery__img-txt {
+      position: absolute;
+      z-index: 3;
+      width: 100%;
+      height: 20%;
+      top: 70%;
+      background-color: white;
+      opacity: 0.7;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .results-gallery__img-txt h1 {
+        font-family: "Ramabhadra", sans-serif;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        height: auto;
+        overflow: hidden;
+        color: #f42; }
+      .results-gallery__img-txt p {
+        font-family: "Roboto", sans-serif; }
     .results-gallery__img:hover img {
       filter: brightness(1) grayscale(0); }
 
