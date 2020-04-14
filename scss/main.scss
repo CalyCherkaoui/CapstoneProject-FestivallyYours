@@ -17,10 +17,14 @@
   overflow-x: hidden;
 }
 
+html {
+  min-width: 22rem;
+}
 
 body {
   background-color: $text-light;
   width: 100%;
+  min-width: 22rem;
 }
 
 header {

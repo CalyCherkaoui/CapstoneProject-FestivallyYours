@@ -2,12 +2,13 @@
 $primary: #f42;
 $secondary: lighten($primary, 30%);
 $text-light: white;
-$text-shade: lighten(grey, 30%);
+$text-shade: lighten(rgb(97, 94, 94), 30%);
 $text-dark: #272727;
 $text-grey: gray;
 $nav-hover: white;
 $footer-dark: black;
 $footer-light: #272727;
+$form-grey:  	#D8D8D8;
 
 // other colors for use
 

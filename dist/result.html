@@ -43,9 +43,7 @@
           Filter by name, country, event date, music Genre, artists:
         </h2>
         <form class="filter-form">
-          <label class="filter-form__element-title_desk"
-            >Festival Name: *</label
-          >
+          <label class="filter-form__element-title_desk">Festival Name:</label>
           <label class="filter-form__element-title_desk"> Country:</label>
           <label class="filter-form__element-title_desk">Music Genre:</label>
           <label class="filter-form__element-title_desk">Artists: </label>
@@ -54,18 +52,61 @@
 
           <label class="filter-form__element-title">Festival Name: *</label>
           <input type="text" placeholder="Enter a name of a festival" />
+
           <label class="filter-form__element-title"> Country:</label>
-          <input type="text" placeholder="Select a country" />
+
+          <input list="Country" name="Country" placeholder="Select a country" />
+          <datalist id="Country">
+            <option value=" Afghanistan"> </option>
+            <option value=" Albania"> </option>
+            <option value=" Algeria"> </option>
+            <option value=" American Samoa"> </option>
+            <option value=" Andorra"> </option>
+            <option value=" Angola"> </option>
+            <option value=" Anguilla"> </option>
+            <option value=" Antigua and Barbuda"> </option>
+            <option value=" Argentina"> </option>
+            <option value=" Armenia"> </option>
+            <option value=" Aruba"> </option>
+            <option value=" Australia"> </option>
+            <option value=" Austria"> </option>
+            <option value=" Azerbaijan"> </option>
+            <option value=" Bahamas"> </option>
+            <option value=" Bahrain"> </option>
+            <option value=" Bangladesh"> </option>
+            <option value=" Barbados"> </option>
+            <option value=" Belarus"> </option>
+            <option value=" Belgium"> </option>
+            <option value=" Belize"> </option>
+            <option value=" Benin"> </option>
+            <option value=" Bermuda"> </option>
+            <option value=" Bhutan"> </option>
+            <option value=" Bolivia"> </option>
+            <option value=" Bosnia and Herzegovina"> </option>
+            <option value=" Botswana"> </option>
+            <option value=" Brazil"> </option>
+            <option value=" British Virgin Islands"> </option>
+            <option value=" Brunei"> </option>
+            <option value=" Bulgaria"> </option>
+          </datalist>
 
           <label class="filter-form__element-title">Music Genre:</label>
-          <input type="text" placeholder="Select a type of music" />
+          <input list="music" placeholder="Select a type of music" />
+          <datalist id="music">
+            <option value="Jazz"> </option>
+            <option value="Electro"> </option>
+            <option value="Blues"> </option>
+            <option value="Country"> </option>
+            <option value="Jazz manouch"> </option>
+          </datalist>
 
           <label class="filter-form__element-title">Artists: </label>
           <input type="text" placeholder="Enter a name of an artist" />
 
           <label class="filter-form__element-title">Event date:</label>
           <input type="text" placeholder="Select a date range" />
-          <div class="empty-separator"></div>
+
+          <div class="empty-separator-sm"></div>
           <div class="filter-form__element-btn">
             <button>Search</button>
             <button>Clearfilter</button>
