@@ -64,12 +64,6 @@ cursive;
 
 //media queries
 
-@mixin small-mobile {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
-}
-
 @mixin mobile {
   @media screen and (max-width: 768px) {
     @content;

@@ -6,6 +6,7 @@
 @import "navigation";
 @import "animation";
 @import "forms";
+@import "gallery";
 
 *,
 *::after,
@@ -29,6 +30,10 @@ header {
 main {
   width: 100%;
   display: block;
+
+  // &#result {
+  //   background-color: black;
+  // }
 }
 
 footer {
