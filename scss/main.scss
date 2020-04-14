@@ -63,10 +63,122 @@ a {
   width: 100%;
   height: 70vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    ". hero ."
+    ". form .";
+
+  .hero-title {
+    // background-color: red;
+    grid-area: hero;
+    color: $text-light;
+    overflow: hidden;
+    white-space: nowrap;
+    align-self: end;
+    justify-content: start;
+    padding-bottom: 1rem;
+
+    p {
+      font-family: $capital-accent;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: $text-light;
+      // padding-right: 1rem;
+      letter-spacing: 0.06rem;
+
+      .logo {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .form-container {
+    grid-area: form;
+    width: 90%;
+    height: 10rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 10rem;
+      background-color: white;
+      opacity: 0.7;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+
+    h2 {
+      text-transform: uppercase;
+      font-family: $text-regular;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: $text-dark;
+      padding-bottom: 0.5rem;
+      z-index: 2;
+    }
+
+
+    form {
+      // background-color: red;
+      width: 100%;
+      // @include self-center;
+      display: inline-flex;
+      z-index: 2;
+
+      input[type=text] {
+        padding-left: 1rem;
+        height: 2rem;
+        width: 100%;
+        border: solid 1px $text-shade;
+        outline-color: opacify($color: $text-shade, $amount: 0.7);
+        outline-width: 0.5px;
+        background: transparent;
+
+        &::placeholder {
+          font-size: 1rem;
+          color: $text-grey;
+          font-family: $text-regular;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+
+      button {
+        width: 30%;
+        height: 2rem;
+        font-size: 0.9rem;
+        color: $text-shade;
+        font-family: $text-regular;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: normal;
+        border: solid 1px $primary;
+        background-color: $primary;
+        outline: none;
+        z-index: 4;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba($color: grey, $alpha: 0.1);
+          color: $primary;
+          @include ease-out;
+        }
+      }
+    }
+  }
 
   &::before {
     content: "";
@@ -234,6 +346,7 @@ footer {
   background-color: $footer-dark;
   width: 100%;
   padding: 0.5rem 4%;
+  @include self-center;
 
   .footer-list {
     // background-color: indianred;
