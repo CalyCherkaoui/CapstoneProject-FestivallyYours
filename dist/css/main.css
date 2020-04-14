@@ -107,15 +107,103 @@ header {
   100% {
     opacity: 1; } }
 
+.filter {
+  position: relative;
+  height: fit-content;
+  width: 97%;
+  margin: 2rem auto;
+  padding: 2.8125rem 0;
+  background-color: #9ae2e9;
+  border-radius: 2px;
+  display: grid;
+  grid-template-rows: 1fr 2fr; }
+  .filter-title {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: white;
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    height: auto;
+    overflow: hidden;
+    color: #f42; }
+    @media screen and (min-width: 1024px) {
+      .filter-title {
+        transition: all 0.5s ease-out;
+        font-size: 1.2rem;
+        line-height: 1.5rem; } }
+  .filter-form {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(7, auto); }
+    @media screen and (min-width: 1024px) {
+      .filter-form {
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: 1fr 1fr; } }
+    .filter-form__element-title_desk {
+      display: none; }
+      @media screen and (min-width: 1024px) {
+        .filter-form__element-title_desk {
+          display: block; } }
+    @media screen and (min-width: 1024px) {
+      .filter-form__element-title {
+        display: none; } }
+    .filter-form .empty-separator-lm {
+      display: none; }
+      @media screen and (min-width: 1024px) {
+        .filter-form .empty-separator-lm {
+          display: block; } }
+    @media screen and (min-width: 1024px) {
+      .filter-form .empty-separator-sm {
+        display: none; } }
+    .filter-form input[type=text] {
+      padding-left: 1rem;
+      height: 2rem;
+      width: 100%;
+      border: solid 0.5px gray;
+      outline: none;
+      background: transparent;
+      padding: 0.4rem 0;
+      text-align: center;
+      z-index: 2; }
+      .filter-form input[type=text]::placeholder {
+        font-size: 0.9rem;
+        color: gray;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        line-height: normal;
+        z-index: 3; }
+    .filter-form button {
+      width: 30%;
+      height: 2rem;
+      font-size: 0.9rem;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      line-height: normal;
+      border: solid 1px #f42;
+      outline: none; }
+      .filter-form button:hover {
+        cursor: pointer;
+        background-color: rgba(128, 128, 128, 0.1);
+        color: #f42;
+        transition: all 0.5s ease-out; }
+
 .results-head {
   text-align: center; }
 
 .results-gallery {
   position: relative;
   height: fit-content;
-  width: 90%;
+  width: 97%;
   margin: auto;
-  padding: 45px 0;
+  padding: 2.8125rem 0;
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 2vmin;
@@ -134,8 +222,6 @@ header {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9); }
     .results-gallery__img:first-child {
       grid-column-start: span 2; }
-    .results-gallery__img:nth-child(8) {
-      grid-row-start: span 2; }
     .results-gallery__img img {
       height: 100%;
       width: 100%;
@@ -146,8 +232,8 @@ header {
       position: absolute;
       z-index: 3;
       width: 100%;
-      height: 20%;
-      top: 70%;
+      height: 30%;
+      top: 50%;
       background-color: white;
       opacity: 0.7;
       text-align: center;
@@ -155,17 +241,33 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
+      @media screen and (min-width: 1024px) {
+        .results-gallery__img-txt {
+          top: 70%; } }
       .results-gallery__img-txt h1 {
         font-family: "Ramabhadra", sans-serif;
-        font-size: 1.25rem;
-        line-height: 2rem;
+        font-size: 1rem;
+        line-height: 1rem;
         height: auto;
         overflow: hidden;
         color: #f42;
         text-transform: uppercase; }
+        @media screen and (min-width: 1024px) {
+          .results-gallery__img-txt h1 {
+            transition: all 0.5s ease-out;
+            font-size: 1.2rem;
+            line-height: 1.5rem; } }
       .results-gallery__img-txt p {
         font-family: "Roboto", sans-serif;
-        font-size: 0.8rem; }
+        font-size: 0.5rem; }
+        @media screen and (min-width: 1024px) {
+          .results-gallery__img-txt p {
+            font-size: 0.6rem; } }
+      .results-gallery__img-txt:hover {
+        animation: fading 2s ease-out 0s;
+        background-color: transparent;
+        color: white;
+        transition: all 0.5s ease-out; }
     .results-gallery__img:hover img {
       filter: brightness(1) grayscale(0); }
 
@@ -187,6 +289,8 @@ header {
 main {
   width: 100%;
   display: block; }
+  main#result {
+    margin-top: 5vh; }
 
 footer {
   display: flex;
