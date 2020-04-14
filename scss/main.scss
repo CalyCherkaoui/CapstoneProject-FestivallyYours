@@ -13,10 +13,29 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
+
 
 body {
   background-color: $text-light;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -28,7 +47,7 @@ a {
   font-family: $logo1;
   letter-spacing: normal;
   font-weight: 800;
-  line-height: 1rem;
+  line-height: 1.9rem;
 
   span {
     font-size: 0.9rem;
@@ -337,14 +356,6 @@ a {
       }
     }
   }
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-top {

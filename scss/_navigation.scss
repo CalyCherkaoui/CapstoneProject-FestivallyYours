@@ -1,16 +1,19 @@
 header {
-  padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+  padding: 0.8rem 0.1rem 0.8rem 0.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $primary;
+  position: fixed;
+  z-index: 20;
 }
 
 .brand-nav {
+  height: 2rem;
   padding-left: 3.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: $text-light;
-  display: inline;
+  @include self-center;
 }
 
 .nav-wrapper {
@@ -22,14 +25,13 @@ header {
 .nav-list {
   list-style: none;
   display: flex;
-  // padding-right: 1.5rem;
 
   &__item {
     padding: 0.8rem 0.6rem;
   }
 
   &__link {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: $navigation-font;
     font-weight: 700;
     color: $text-light;
@@ -67,7 +69,7 @@ header {
   padding: 0.8rem 1rem;
 
   .hamburger-btn__line {
-    width: 2.2rem;
+    width: 2.1rem;
     height: 3px;
     background: $text-light;
     border-radius: 3px;
@@ -77,7 +79,7 @@ header {
     &::after {
       content: "";
       position: absolute;
-      width: 2.2rem;
+      width: 2.1rem;
       height: 3px;
       background: $text-light;
       border-radius: 3px;

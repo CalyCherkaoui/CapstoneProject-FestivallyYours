@@ -3,17 +3,22 @@
 @import url("https://fonts.googleapis.com/css?family=Crafty+Girls|Indie+Flower|Just+Another+Hand|Lakki+Reddy|Mansalva|Nanum+Gothic|Parisienne|Rock+Salt|Sacramento|Sedgwick+Ave+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 header {
-  padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+  padding: 0.8rem 0.1rem 0.8rem 0.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f42; }
+  background-color: #f42;
+  position: fixed;
+  z-index: 20; }
 
 .brand-nav {
+  height: 2rem;
   padding-left: 3.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
-  display: inline; }
+  display: flex;
+  justify-content: center;
+  align-self: center; }
 
 .nav-wrapper {
   display: flex;
@@ -26,7 +31,7 @@ header {
   .nav-list__item {
     padding: 0.8rem 0.6rem; }
   .nav-list__link {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: white;
@@ -53,7 +58,7 @@ header {
 .hamburger-btn {
   padding: 0.8rem 1rem; }
   .hamburger-btn .hamburger-btn__line {
-    width: 2.2rem;
+    width: 2.1rem;
     height: 3px;
     background: white;
     border-radius: 3px;
@@ -61,7 +66,7 @@ header {
     .hamburger-btn .hamburger-btn__line::before, .hamburger-btn .hamburger-btn__line::after {
       content: "";
       position: absolute;
-      width: 2.2rem;
+      width: 2.1rem;
       height: 3px;
       background: white;
       border-radius: 3px; }
@@ -89,10 +94,25 @@ header {
 *::before {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
 
 body {
-  background-color: white; }
+  background-color: white;
+  width: 100%; }
+
+header {
+  width: 100%; }
+
+main {
+  width: 100%; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
 
 a {
   text-decoration: none;
@@ -102,7 +122,7 @@ a {
   font-family: "Rock Salt", cursive;
   letter-spacing: normal;
   font-weight: 800;
-  line-height: 1rem; }
+  line-height: 1.9rem; }
   .logo span {
     font-size: 0.9rem;
     color: #0f4c81; }
@@ -330,13 +350,6 @@ a {
         border-radius: 50%;
         width: 20rem;
         height: 20rem; }
-
-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center; }
 
 .footer-top {
   background-color: black;
