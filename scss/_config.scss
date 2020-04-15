@@ -49,22 +49,18 @@ cursive;
 // animation
 
 @mixin ease-out {
-
   transition: all 0.5s ease-out;
 }
 
 @mixin ease-in {
-
   transition: all 0.5s ease-in;
 }
 
 // content self aligning
 @mixin self-center {
-
   display: flex;
   justify-content: center;
   align-self: center;
-
 }
 
 //media queries
@@ -79,11 +75,9 @@ cursive;
   @media screen and (min-width: 769px) and (max-width: 1023px) {
     @content;
   }
-
 }
 
 @mixin desktop {
-
   @media screen and (min-width: 1024px) {
     @content;
   }

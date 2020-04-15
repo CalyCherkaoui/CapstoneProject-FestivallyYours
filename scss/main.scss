@@ -66,7 +66,6 @@ a {
 }
 
 .separator {
-
   width: 25rem;
   margin-left: auto;
   margin-right: auto;
@@ -207,7 +206,6 @@ a {
 
 
     form {
-
       width: 100%;
       display: inline-flex;
       z-index: 2;
@@ -286,7 +284,6 @@ a {
 }
 
 .guide {
-
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -298,7 +295,6 @@ a {
   }
 
   &-item {
-
     overflow: hidden;
     display: grid;
     width: 70vw;
@@ -324,7 +320,6 @@ a {
     }
 
     &__title {
-
       font-size: 1rem;
       font-family: $navigation-font;
       text-transform: uppercase;
@@ -333,7 +328,6 @@ a {
     }
 
     &__text {
-
       font-family: $text-regular;
       font-size: 0.8rem;
       font-weight: 200;
@@ -424,7 +418,6 @@ a {
         font-family: $text-regular;
 
         @include desktop {
-
           margin-bottom: 1rem;
           font-size: 1.5rem;
         }
@@ -683,7 +676,6 @@ a {
       }
 
       form {
-
         @include self-center;
 
         input[type=text] {
