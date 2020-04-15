@@ -39,6 +39,13 @@ firefox index.html
 - Github: https://github.com/CalyCherkaoui/
 - Linkedin: https://www.linkedin.com/in/houda-cherkaoui-64106395/
 
+## References used in this project:
+
+### A banche of handy codepen :
+
+.._ "Erik Terwan" [codepen](https://codepen.io/erikterwan/pen/EVzeRP)
+.._"Thomas Vaeth" [codepen](https://codepen.io/thomasvaeth/pen/JKxRNk)
+
 ## Contributing and support:
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
