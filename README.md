@@ -4,19 +4,44 @@
 
 ## Description:
 
-In this project, I tried to build the Html/CSS of a web-site []() web page.
+In this project I build a Web-page from scratch based on a given [UX design](https://www.behance.net/gallery/25563385/PatashuleKE) with HTML and CSS.
+
+The web-page is responsive in 3 different screen sizes:
+
+- Mobile version : up to 768px;
+- Tablet version: up to 1024px;
+- Desktop version: from 1024px.
 
 ## Built With:
 
 - HTML & CSS
 - SASS
-- Little JavaScript
+- Verry little JavaScript code.
+
+## Workflow:
+
+1. I installed NPM and NodeJs
+2. I set up the node-sass watcher with npm.
+3. I created a Gitignore file and "gitignore"-ed the node-modules folder
+4. In my branch, I created a "dist" folder where i have my pure HTML and CSS files , and a "scss" folder where I have my Scss modules files
+5. In my Scss, I worked with modules that have been used in the main.scss. Those modules are:
+   5.0. Setting up the Overall parameters, variables (typography, colors palette), functions and mixins in \_config.scss
+   5.1. Setting up all the navigation styling in \_navigation.scss file
+   5.2. Setting up all the forms styling in \_forms.scss file
+   5.3. Setting up the animations used in the project in the \_animation.scss file
+   5.4. Setting up the cards styling in the \_card.scss file
 
 ## Code Review Tools:
 
 - [W3 HTML Validator](https://validator.w3.org/)
 - CSS linter : [Stickler](https://stickler-ci.com/)
 - The fabulous Microverse's team of reviewers:)
+
+## Environement:
+
+- IDE: Visual Studio Code
+- Controle version : Git
+- Chrome and Firefox web browsers
 
 ## Usage:
 
@@ -39,12 +64,17 @@ firefox index.html
 - Github: https://github.com/CalyCherkaoui/
 - Linkedin: https://www.linkedin.com/in/houda-cherkaoui-64106395/
 
-## References used in this project:
+## References, credits, and copyrights used in this learning project:
 
-### A banche of handy codepen :
+### The UX design:
 
-.. "Erik Terwan" [codepen](https://codepen.io/erikterwan/pen/EVzeRP)
-.."Thomas Vaeth" [codepen](https://codepen.io/thomasvaeth/pen/JKxRNk)
+- Design idea by [Mathew Njuguna](https://www.behance.net/mathewnjuguna)
+
+### Some useful and handy codepen and tools :
+
+- "Erik Terwan" [codepen](https://codepen.io/erikterwan/pen/EVzeRP)
+- "Thomas Vaeth" [codepen](https://codepen.io/thomasvaeth/pen/JKxRNk)
+- "Bennett Feely" [clip path maker](https://bennettfeely.com/clippy/)
 
 ## Contributing and support:
 
