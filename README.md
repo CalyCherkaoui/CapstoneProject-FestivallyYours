@@ -91,12 +91,12 @@ Show your support to this project with a ⭐️ and let me now if you would like
 
 ### Screenshot of the desktop version:
 
-![screenshot]()
+![screenshot](dist/image/ScreenHomeDesktop.png) ![screenshot](dist/image/ScreenEventDesktop.png) ![screenshot](dist/image/ScreenCardDesktop.png)
 
 ### Screenshot of the tablet version:
 
-![screenshot]()
+![screenshot](dist/image/ScreenHomeTablet.png) ![screenshot](dist/image/ScreenEventTablet.png) ![screenshot](dist/image/ScreenCardTablet.png)
 
 ### Screenshot of the mobile version:
 
-![screenshot]()
+![screenshot](dist/image/ScreenHomeMobile.png) ![screenshot](dist/image/ScreenEventMobile.png) ![screenshot](dist/image/ScreenCardmobile.png)
