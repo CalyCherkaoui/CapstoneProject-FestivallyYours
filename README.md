@@ -4,7 +4,7 @@
 
 ## Description:
 
-In this project, I tried to build the Html/CSS of a web-site [the Newsweek]() web page.
+In this project, I tried to build the Html/CSS of a web-site []() web page.
 
 ## Built With:
 
@@ -43,8 +43,8 @@ firefox index.html
 
 ### A banche of handy codepen :
 
-.._ "Erik Terwan" [codepen](https://codepen.io/erikterwan/pen/EVzeRP)
-.._"Thomas Vaeth" [codepen](https://codepen.io/thomasvaeth/pen/JKxRNk)
+.. "Erik Terwan" [codepen](https://codepen.io/erikterwan/pen/EVzeRP)
+.."Thomas Vaeth" [codepen](https://codepen.io/thomasvaeth/pen/JKxRNk)
 
 ## Contributing and support:
 
