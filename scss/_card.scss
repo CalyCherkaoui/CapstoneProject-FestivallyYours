@@ -265,4 +265,9 @@
       font-family: $navigation-font;
     }
   }
+
+  &__box {
+    width: 100%;
+    height: 60vh;
+  }
 }

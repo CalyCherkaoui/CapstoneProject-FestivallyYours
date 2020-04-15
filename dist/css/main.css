@@ -490,6 +490,9 @@ header {
       font-size: 1.5rem;
       letter-spacing: 0.3rem;
       font-family: "Montserrat", sans-serif; }
+  .map__box {
+    width: 100%;
+    height: 60vh; }
 
 *,
 *::after,

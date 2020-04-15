@@ -11,6 +11,7 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   </head>
   <body>
     <header>
@@ -121,7 +122,7 @@
           <div class="map__head">
             <a href="#">Click here for more detail -></a>
           </div>
-          <div class="map__box"></div>
+          <div id="map" class="map__box"></div>
         </div>
       </section>
     </main>
@@ -213,6 +214,28 @@
         </div>
       </section>
     </footer>
-    <script src="../js/main.js"></script>
+
+    <!-- <script src="../js/main.js"></script> -->
+    <script>
+      function initialize() {
+        var latitude = new google.maps.LatLng(40.650002, -73.949997);
+        var zoomCenter = {
+          zoom: 2,
+          center: latitude,
+        };
+        var map = new google.maps.Map(
+          document.getElementById("map"),
+          zoomCenter
+        );
+
+        var marker = new google.maps.Marker({
+          position: lattitude,
+          map: map,
+          title: "festival location",
+        });
+      }
+
+      google.maps.event.addDomListener(window, "load", initialize);
+    </script>
   </body>
 </html>
