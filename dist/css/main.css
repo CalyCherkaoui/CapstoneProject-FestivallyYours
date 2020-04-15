@@ -799,27 +799,31 @@ a {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto; } }
     .landing .landing-section__content {
-      padding: 0 7%;
+      padding: 1rem 7%;
+      justify-self: start;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-self: center;
-      flex-direction: column; }
+      align-items: center; }
+      @media screen and (min-width: 1024px) {
+        .landing .landing-section__content {
+          align-items: flex-start; } }
+      @media screen and (min-width: 769px) and (max-width: 1023px) {
+        .landing .landing-section__content {
+          align-items: flex-start; } }
       .landing .landing-section__content .landing-title {
         color: white;
         margin-bottom: 1rem;
         font-size: 1rem;
-        font-family: "Roboto", sans-serif;
-        text-align: center; }
+        font-family: "Roboto", sans-serif; }
         @media screen and (min-width: 1024px) {
           .landing .landing-section__content .landing-title {
             margin-bottom: 1rem;
-            font-size: 1.5rem;
-            text-align: left; } }
+            font-size: 1.5rem; } }
         @media screen and (min-width: 769px) and (max-width: 1023px) {
           .landing .landing-section__content .landing-title {
             margin-bottom: 1rem;
-            font-size: 1.5rem;
-            text-align: left; } }
+            font-size: 1.5rem; } }
       .landing .landing-section__content .landing-text {
         font-family: "Roboto", sans-serif;
         color: white;

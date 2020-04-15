@@ -384,7 +384,6 @@ a {
 
     .landing-link {
       color: darken($text-shade, 25%);
-      ;
     }
   }
 
@@ -411,27 +410,35 @@ a {
     }
 
     &__content {
-      padding: 0 7%;
-      @include self-center;
+      padding: 1rem 7%;
+      justify-self: start;
+      display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @include desktop {
+        align-items: flex-start;
+      }
+
+      @include tablette {
+        align-items: flex-start;
+      }
 
       .landing-title {
         color: $text-light;
         margin-bottom: 1rem;
         font-size: 1rem;
         font-family: $text-regular;
-        text-align: center;
 
         @include desktop {
           margin-bottom: 1rem;
           font-size: 1.5rem;
-          text-align: left;
         }
 
         @include tablette {
           margin-bottom: 1rem;
           font-size: 1.5rem;
-          text-align: left;
         }
       }
 
