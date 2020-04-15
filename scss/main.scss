@@ -500,10 +500,6 @@ a {
           text-align: left;
         }
 
-        &:hover {
-          animation: fading 1s ease-out 0s;
-        }
-
       }
 
     }
@@ -539,6 +535,10 @@ a {
 
   }
 
+}
+
+.landing-link:hover {
+  animation: fading 1s ease-out 0s;
 }
 
 .footer-top {
@@ -638,6 +638,7 @@ a {
   }
 
 }
+
 
 .footer-btm {
   background-color: $footer-light;
@@ -772,6 +773,7 @@ a {
             cursor: pointer;
             @include ease-out;
             background-color: rgba($color: grey, $alpha: 0.1);
+
           }
 
         }
