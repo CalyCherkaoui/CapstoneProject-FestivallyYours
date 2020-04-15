@@ -92,8 +92,6 @@ header {
       transform: translateY(-8px); }
     .hamburger-btn .hamburger-btn__line::after {
       transform: translateY(8px); }
-  .hamburger-btn.open {
-    background-color: black; }
 
 @keyframes fading {
   0% {
