@@ -181,6 +181,8 @@ a {
 
     @include desktop {
       width: 100%;
+      opacity: 0.8;
+      background-color: white;
     }
 
     &::before {
@@ -241,9 +243,10 @@ a {
         }
       }
 
-      button {
+      .button {
         width: 30%;
         height: 2rem;
+        padding: 0.5rem;
         font-size: 0.9rem;
         color: $text-light;
         font-family: $text-regular;
@@ -254,6 +257,7 @@ a {
         background-color: $primary;
         outline: none;
         z-index: 2;
+        @include self-center;
 
         &:hover {
           cursor: pointer;

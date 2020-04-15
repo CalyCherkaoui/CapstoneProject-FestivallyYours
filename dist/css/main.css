@@ -210,7 +210,8 @@ header {
       .filter-form button:focus {
         background-color: initial; }
       .filter-form button:nth-of-type(1) {
-        background-color: #2ab2c0; }
+        background-color: #2ab2c0;
+        margin-right: 0.15rem; }
       .filter-form button:nth-of-type(2) {
         background-color: #f8a036; }
       @media screen and (min-width: 1024px) {
@@ -626,7 +627,9 @@ a {
     box-shadow: 0 0.5px 1rem rgba(0, 0, 0, 0.2); }
     @media screen and (min-width: 1024px) {
       .search .form-container {
-        width: 100%; } }
+        width: 100%;
+        opacity: 0.8;
+        background-color: white; } }
     .search .form-container::before {
       content: "";
       width: 100%;
@@ -670,9 +673,10 @@ a {
           font-weight: 300;
           line-height: normal;
           z-index: 3; }
-      .search .form-container form button {
+      .search .form-container form .button {
         width: 30%;
         height: 2rem;
+        padding: 0.5rem;
         font-size: 0.9rem;
         color: white;
         font-family: "Roboto", sans-serif;
@@ -682,8 +686,11 @@ a {
         border: solid 1px #f42;
         background-color: #f42;
         outline: none;
-        z-index: 2; }
-        .search .form-container form button:hover {
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-self: center; }
+        .search .form-container form .button:hover {
           cursor: pointer;
           background-color: rgba(128, 128, 128, 0.1);
           color: #f42;
