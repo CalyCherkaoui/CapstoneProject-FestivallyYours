@@ -241,14 +241,10 @@
   &__head {
     background-color: $form-grey;
     padding: 2rem;
-
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    font-family: $navigation-font;
     @include self-center;
-
-    a {
-      font-size: 1.5rem;
-      letter-spacing: 0.3rem;
-      font-family: $navigation-font;
-    }
   }
 
   &__box {
