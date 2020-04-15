@@ -96,7 +96,7 @@ a {
   grid-template-areas:
     "hero"
     "form";
-    
+
   @include ease-out;
 
   @include desktop {
@@ -197,7 +197,6 @@ a {
       }
     }
 
-
     h2 {
       text-transform: uppercase;
       font-family: $text-regular;
@@ -207,7 +206,6 @@ a {
       padding-bottom: 0.5rem;
       z-index: 2;
     }
-
 
     form {
       width: 100%;

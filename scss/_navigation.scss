@@ -16,14 +16,12 @@ header {
   color: $text-light;
   overflow: hidden;
 
-
   @include tablette {
     font-size: 1.3rem;
     height: 2rem;
     padding-left: 3.5rem;
 
     @include ease-out;
-    
     @include self-center;
   }
 
@@ -64,7 +62,7 @@ header {
     text-transform: uppercase;
     position: relative;
 
-    &:after {
+    &::after {
       content: "";
       display: block;
       height: 3px;

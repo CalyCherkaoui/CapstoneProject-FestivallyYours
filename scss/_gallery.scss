@@ -7,7 +7,6 @@
   }
 
   &-gallery {
-
     position: relative;
     height: fit-content;
     width: 97%;
@@ -42,7 +41,7 @@
         width: 100%;
         object-fit: cover;
         filter: brightness(0.5) grayscale(50);
-        
+
         @include ease-out;
       }
 
@@ -96,7 +95,6 @@
           color: $text-light;
 
           @include ease-out;
-
         }
       }
 
