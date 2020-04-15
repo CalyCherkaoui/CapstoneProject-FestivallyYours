@@ -76,6 +76,12 @@ firefox index.html
 - "Thomas Vaeth" [codepen](https://codepen.io/thomasvaeth/pen/JKxRNk)
 - "Bennett Feely" [clip path maker](https://bennettfeely.com/clippy/)
 
+### Acknowledgments:
+
+- Microverse
+- css-tricks.com
+- Github
+
 ## Contributing and support:
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
