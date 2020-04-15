@@ -368,19 +368,10 @@ a {
 }
 
 .landing {
-  // background-color: coral;
   width: 100%;
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-
-  // @include tablette {
-  //   grid-template-rows: 1fr 1fr 1fr;
-  // }
-
-  // @include desktop {
-  //   grid-template-rows: 1fr 1fr 1fr;
-  // }
 
   #rib1 {
     background-color: lighten($color:$primary, $amount: 10%);
@@ -462,7 +453,7 @@ a {
       }
 
       .landing-link {
-        width: 3rem;
+        width: 7rem;
         margin-top: 0.8rem;
         padding: 0.3rem;
         font-family: $text-regular;
@@ -470,10 +461,10 @@ a {
         font-weight: 500;
         background-color: rgba($color: $text-light, $alpha:0.7);
         border-radius: 3px;
-        text-align: center;
+        // text-align: center;
 
         @include desktop {
-          width: 5rem;
+          width: 8rem;
           margin-top: 1rem;
           padding: 0.5rem;
           font-size: 1rem;
@@ -481,7 +472,7 @@ a {
         }
 
         @include tablette {
-          width: 5rem;
+          width: 8rem;
           margin-top: 1rem;
           padding: 0.5rem;
           font-size: 1rem;
