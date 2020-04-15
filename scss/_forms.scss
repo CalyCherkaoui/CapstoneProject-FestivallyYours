@@ -26,9 +26,7 @@
       @include ease-out;
       font-size: 1.5rem;
       line-height: 2rem;
-
     }
-
   }
 
   &-form {
@@ -45,7 +43,6 @@
 
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: 1fr 1fr;
-
     }
 
     &__element-title_desk {
@@ -55,9 +52,7 @@
 
       @include desktop {
         display: block;
-
       }
-
     }
 
     &__element-title {
@@ -66,9 +61,7 @@
 
       @include desktop {
         display: none;
-
       }
-
     }
 
     .empty-separator-lm {
@@ -76,9 +69,7 @@
 
       @include desktop {
         display: block;
-
       }
-
     }
 
     .empty-separator-sm {
@@ -86,9 +77,7 @@
       @include desktop {
 
         display: none;
-
       }
-
     }
 
     label {
@@ -96,7 +85,6 @@
       font-size: 0.9rem;
       font-family: $text-regular;
       color: $footer-light;
-
     }
 
     input {
@@ -112,7 +100,6 @@
       @include desktop {
 
         height: 2.5rem;
-
       }
 
       &::placeholder {
@@ -122,15 +109,12 @@
         font-weight: 300;
         line-height: normal;
         z-index: 3;
-
       }
-
     }
 
     &__element-btn {
       display: grid;
       grid-template-columns: 1fr 1fr;
-
     }
 
     button {
@@ -151,26 +135,21 @@
       &:focus {
 
         background-color: initial;
-
       }
 
       &:nth-of-type(1) {
 
         background-color: $my-light-blue;
         margin-right: 0.15rem;
-
       }
 
       &:nth-of-type(2) {
 
         background-color: $my-light-orange;
-
       }
 
       @include desktop {
-
         height: 2.5rem;
-
       }
 
       &:hover {
@@ -178,11 +157,7 @@
         background-color: $text-light;
         color: $primary;
         @include ease-out;
-
       }
-
     }
-
   }
-
 }
