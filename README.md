@@ -76,6 +76,11 @@ firefox index.html
 - "Thomas Vaeth" [codepen](https://codepen.io/thomasvaeth/pen/JKxRNk)
 - "Bennett Feely" [clip path maker](https://bennettfeely.com/clippy/)
 
+## Page content :
+
+- Photos and text credits to [festicket.com Magazine](https://www.festicket.com/)
+- Just for learning purpose: I add some content to my page from the ["TOP 50: The Best Music Festivals in the World 2020" article](https://www.festicket.com/magazine/discover/top-50-best-music-festivals-world/) in [festicket.com Magazine](https://www.festicket.com/)
+
 ### Acknowledgments:
 
 - Microverse
