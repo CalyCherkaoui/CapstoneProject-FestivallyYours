@@ -74,7 +74,7 @@ a {
   width: 25rem;
   margin-left: auto;
   margin-right: auto;
-  // background-color: yellow;
+
   padding: 0 2rem 1rem 2rem;
 
   &-text {
@@ -120,7 +120,7 @@ a {
   }
 
   .hero-title {
-    // background-color: red;
+
     grid-area: hero;
     color: $text-light;
     overflow: hidden;
@@ -216,7 +216,7 @@ a {
 
 
     form {
-      // background-color: red;
+
       width: 100%;
       display: inline-flex;
       z-index: 2;
@@ -226,7 +226,6 @@ a {
         height: 2rem;
         width: 100%;
         border: solid 0.5px $text-grey;
-        // outline-color: opacify($color: $text-shade, $amount: 0.7);
         outline: none;
         background: transparent;
         padding: 0.4rem 0;
@@ -298,7 +297,7 @@ a {
 }
 
 .guide {
-  // background-color: yellow;
+
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -310,7 +309,7 @@ a {
   }
 
   &-item {
-    // background-color: lightcoral;
+
     overflow: hidden;
     display: grid;
     width: 70vw;
@@ -328,7 +327,6 @@ a {
     &__icon {
       font-size: 2rem;
       font-weight: 400;
-      // background-color: brown;
       @include self-center;
 
       i {
@@ -337,7 +335,7 @@ a {
     }
 
     &__title {
-      // background-color: blue;
+
       font-size: 1rem;
       font-family: $navigation-font;
       text-transform: uppercase;
@@ -346,7 +344,7 @@ a {
     }
 
     &__text {
-      // background-color: wheat;
+
       font-family: $text-regular;
       font-size: 0.8rem;
       font-weight: 200;
@@ -461,7 +459,6 @@ a {
         font-weight: 500;
         background-color: rgba($color: $text-light, $alpha:0.7);
         border-radius: 3px;
-        // text-align: center;
 
         @include desktop {
           width: 8rem;
@@ -486,7 +483,6 @@ a {
     }
 
     &__img {
-      // background-color: white;
       width: 100%;
       object-fit: fill;
       overflow: hidden;
@@ -605,11 +601,6 @@ a {
   width: 100%;
   height: 15vh;
   display: none;
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // padding-right: 2rem;
-  // padding-left: 2rem;
-  // grid-column-gap: 2rem;
 
   @include tablette {
     display: grid;
@@ -630,7 +621,6 @@ a {
   &-element {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    // background-color: blue;
     padding-right: 1rem;
     padding-left: 1rem;
 
@@ -643,12 +633,10 @@ a {
       font-weight: 300;
       line-height: normal;
       text-transform: uppercase;
-      // background-color: brown;
       overflow: hidden;
     }
 
     &__content {
-      // @include self-center;
       text-align: center;
 
       p {
@@ -711,7 +699,6 @@ a {
 .footer-btm {
   background-color: $footer-light;
   width: 100%;
-  // height: 9vh;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;

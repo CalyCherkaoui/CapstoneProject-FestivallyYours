@@ -14,7 +14,6 @@
     align-self: center;
     justify-self: center;
     @include self-center;
-    // background-color: white;
     font-family: $capital;
     font-size: 1rem;
     line-height: 1rem;
@@ -36,11 +35,8 @@
     width: 100%;
     height: 100%;
     padding: 1rem;
-    // margin: auto;
-    // background-color: yellow;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    // grid-template-rows: repeat(7, auto);
     grid-gap: 0.1rem;
 
     @include desktop {
@@ -87,22 +83,18 @@
     }
 
     input {
-      // padding-left: 1rem;
+
       height: 2rem;
       width: 100%;
       border: solid 0.5px $text-grey;
       border-radius: 3px;
-      // outline-color: opacify($color: $text-shade, $amount: 0.7);
-      // outline: none;
       background: $text-light;
       padding: 0.4rem 0;
       text-align: center;
-      // z-index: 2;
 
       @include desktop {
         height: 2.5rem;
       }
-
 
       &::placeholder {
         font-size: 0.9rem;
@@ -128,10 +120,8 @@
       font-family: $text-regular;
       font-weight: 700;
       line-height: normal;
-      // border: solid 0.5px $primary;
       border: none;
       border-radius: 3px;
-      // outline: none;
       box-shadow: none;
       transition-duration: 0.4s;
 
@@ -159,7 +149,5 @@
         @include ease-out;
       }
     }
-
-
   }
 }
