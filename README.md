@@ -4,7 +4,7 @@
 
 ## Description:
 
-In this project I build a Web-page from scratch based on a given [UX design](https://www.behance.net/gallery/25563385/PatashuleKE) with HTML and CSS.
+In this project I built a Web-page from scratch based on a given [UX design](https://www.behance.net/gallery/25563385/PatashuleKE) with HTML and CSS.
 
 The web-page is responsive in 3 different screen sizes:
 
