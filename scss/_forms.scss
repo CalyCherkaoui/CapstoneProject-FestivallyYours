@@ -11,7 +11,6 @@
   grid-template-rows: 1fr 2fr;
 
   &-title {
-    align-self: center;
     justify-self: center;
     @include self-center;
     font-family: $capital;
