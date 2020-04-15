@@ -40,7 +40,7 @@ The web-page is responsive in 3 different screen sizes:
 ## Environement:
 
 - IDE: Visual Studio Code
-- Controle version : Git
+- Control version : Git
 - Chrome and Firefox web browsers
 
 ## Usage:
@@ -54,7 +54,7 @@ firefox index.html
 
 ## Live Demo:
 
-[Click here to see a live version of the project](https://rawcdn.githack.com/CalyCherkaoui/CapstoneProject-FestivallyYours/f31dfa477b22599ff7da402ca27657c5e244f7e0/dist/index.html)
+[Click here to see a live version of the project hosted on GitHack](https://rawcdn.githack.com/CalyCherkaoui/CapstoneProject-FestivallyYours/f31dfa477b22599ff7da402ca27657c5e244f7e0/dist/index.html)
 
 ## Author:
 
@@ -79,7 +79,7 @@ firefox index.html
 ## Page content :
 
 - Photos and text credits to [festicket.com Magazine](https://www.festicket.com/)
-- Just for learning purpose: I add some content to my page from the ["TOP 50: The Best Music Festivals in the World 2020" article](https://www.festicket.com/magazine/discover/top-50-best-music-festivals-world/) in [festicket.com Magazine](https://www.festicket.com/)
+- Just for learning purpose: I add some content to my page from the ["TOP 50: The Best Music Festivals in the World 2020" article](https://www.festicket.com/magazine/discover/top-50-best-music-festivals-world/) of the [festicket.com Magazine](https://www.festicket.com/).
 
 ### Acknowledgments:
 
