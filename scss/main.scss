@@ -74,7 +74,6 @@ a {
   width: 25rem;
   margin-left: auto;
   margin-right: auto;
-
   padding: 0 2rem 1rem 2rem;
 
   &-text {
@@ -120,7 +119,6 @@ a {
   }
 
   .hero-title {
-
     grid-area: hero;
     color: $text-light;
     overflow: hidden;
@@ -128,8 +126,6 @@ a {
     align-self: end;
     justify-content: start;
     padding-bottom: 1rem;
-
-
 
     p {
       font-family: $capital-accent;
@@ -199,7 +195,6 @@ a {
 
       @include desktop {
         opacity: 0.7;
-
       }
     }
 
@@ -293,7 +288,6 @@ a {
     top: 0;
     z-index: -1;
   }
-
 }
 
 .guide {
@@ -361,7 +355,6 @@ a {
         font-size: 0.9rem;
       }
     }
-
   }
 }
 
@@ -405,14 +398,12 @@ a {
       display: grid;
       grid-template-columns: 2fr 1fr;
       grid-template-rows: auto;
-
     }
 
     @include tablette {
       display: grid;
       grid-template-columns: 2fr 1fr;
       grid-template-rows: auto;
-
     }
 
     &__content {
@@ -425,16 +416,13 @@ a {
 
       @include desktop {
         align-items: flex-start;
-
       }
 
       @include tablette {
         align-items: flex-start;
-
       }
 
       .landing-title {
-
         color: $text-light;
         margin-bottom: 1rem;
         font-size: 1rem;
@@ -444,19 +432,15 @@ a {
 
           margin-bottom: 1rem;
           font-size: 1.5rem;
-
         }
 
         @include tablette {
-
           margin-bottom: 1rem;
           font-size: 1.5rem;
         }
-
       }
 
       .landing-text {
-
         font-family: $text-regular;
         color: $text-light;
         font-size: 0.7rem;
@@ -464,14 +448,11 @@ a {
 
         @include desktop {
           font-size: 1rem;
-
         }
 
         @include tablette {
           font-size: 1rem;
-
         }
-
       }
 
       .landing-link {
@@ -499,9 +480,7 @@ a {
           font-size: 1rem;
           text-align: left;
         }
-
       }
-
     }
 
     &__img {
@@ -519,22 +498,16 @@ a {
           border-radius: 50%;
           width: 12rem;
           height: 12rem;
-
         }
 
         @include desktop {
           border-radius: 50%;
           width: 12rem;
           height: 12rem;
-
         }
-
       }
-
     }
-
   }
-
 }
 
 .landing-link:hover {
@@ -563,20 +536,17 @@ a {
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
         border-right: none;
-
       }
 
       &:nth-of-type(9) {
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         border-left: none;
-
       }
 
       &:nth-of-type(5) {
         padding: 0.5rem;
         border-radius: 50%;
-
       }
 
       &:nth-of-type(2),
@@ -587,7 +557,6 @@ a {
       &:nth-of-type(8) {
         border-right: none;
         border-left: none;
-
       }
     }
 
@@ -605,14 +574,12 @@ a {
         font-size: 0.8rem;
         padding: 0.5rem 0;
         text-transform: uppercase;
-
       }
 
       @include tablette {
         font-size: 0.8rem;
         padding: 0.5rem 0;
         text-transform: uppercase;
-
       }
 
       i {
@@ -626,19 +593,14 @@ a {
           font-size: 2rem;
 
         }
-
       }
 
       &:hover {
         animation: fading 1s ease-out 0s;
       }
-
     }
-
   }
-
 }
-
 
 .footer-btm {
   background-color: $footer-light;
@@ -657,11 +619,8 @@ a {
 
       &:hover {
         animation: fading 1s ease-out 0s;
-
       }
-
     }
-
   }
 
   &__copyright {
@@ -671,9 +630,7 @@ a {
     a:hover {
       animation: fading 1s ease-out 0.1s;
     }
-
   }
-
 }
 
 .footer-mid {
@@ -688,7 +645,6 @@ a {
     padding-right: 2rem;
     padding-left: 2rem;
     grid-column-gap: 2rem;
-
   }
 
   @include desktop {
@@ -697,7 +653,6 @@ a {
     padding-right: 2rem;
     padding-left: 2rem;
     grid-column-gap: 2rem;
-
   }
 
   &-element {
@@ -715,7 +670,6 @@ a {
       line-height: normal;
       text-transform: uppercase;
       overflow: hidden;
-
     }
 
     &__content {
@@ -731,7 +685,6 @@ a {
         a {
           color: $secondary;
         }
-
       }
 
       form {
@@ -752,9 +705,7 @@ a {
             font-family: $text-regular;
             font-weight: 300;
             line-height: normal;
-
           }
-
         }
 
         button {
@@ -773,15 +724,9 @@ a {
             cursor: pointer;
             @include ease-out;
             background-color: rgba($color: grey, $alpha: 0.1);
-
           }
-
         }
-
       }
-
     }
-
   }
-
 }
