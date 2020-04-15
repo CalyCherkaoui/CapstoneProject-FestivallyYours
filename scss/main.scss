@@ -374,16 +374,20 @@ a {
   #rib1 {
     background-color: lighten($color:$primary, $amount: 10%);
 
-    .landing-link {
-      color: lighten($color:$primary, $amount: 10%);
+    .landing-section__content {
+      .landing-link {
+        color: lighten($color:$primary, $amount: 10%);
+      }
     }
   }
 
   #rib2 {
     background-color: darken($text-shade, 25%);
 
-    .landing-link {
-      color: darken($text-shade, 25%);
+    .landing-section__content {
+      .landing-link {
+        color: darken($text-shade, 25%);
+      }
     }
   }
 
