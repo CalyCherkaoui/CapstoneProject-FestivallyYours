@@ -42,6 +42,7 @@
         width: 100%;
         object-fit: cover;
         filter: brightness(0.5) grayscale(50);
+        
         @include ease-out;
       }
 
@@ -73,9 +74,9 @@
           text-transform: uppercase;
 
           @include desktop {
-            @include ease-out;
             font-size: 1.2rem;
             line-height: 1.5rem;
+            @include ease-out;
           }
         }
 
@@ -93,6 +94,7 @@
           background-color: transparent;
           // opacity: 1;
           color: $text-light;
+
           @include ease-out;
 
         }

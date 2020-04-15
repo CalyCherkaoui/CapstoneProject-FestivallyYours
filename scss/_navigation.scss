@@ -18,10 +18,12 @@ header {
 
 
   @include tablette {
-    @include ease-out;
     font-size: 1.3rem;
     height: 2rem;
     padding-left: 3.5rem;
+
+    @include ease-out;
+    
     @include self-center;
   }
 
