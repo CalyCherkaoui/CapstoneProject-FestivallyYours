@@ -405,12 +405,14 @@ a {
       display: grid;
       grid-template-columns: 2fr 1fr;
       grid-template-rows: auto;
+
     }
 
     @include tablette {
       display: grid;
       grid-template-columns: 2fr 1fr;
       grid-template-rows: auto;
+
     }
 
     &__content {
@@ -423,30 +425,38 @@ a {
 
       @include desktop {
         align-items: flex-start;
+
       }
 
       @include tablette {
         align-items: flex-start;
+
       }
 
       .landing-title {
+
         color: $text-light;
         margin-bottom: 1rem;
         font-size: 1rem;
         font-family: $text-regular;
 
         @include desktop {
+
           margin-bottom: 1rem;
           font-size: 1.5rem;
+
         }
 
         @include tablette {
+
           margin-bottom: 1rem;
           font-size: 1.5rem;
         }
+
       }
 
       .landing-text {
+
         font-family: $text-regular;
         color: $text-light;
         font-size: 0.7rem;
@@ -454,11 +464,14 @@ a {
 
         @include desktop {
           font-size: 1rem;
+
         }
 
         @include tablette {
           font-size: 1rem;
+
         }
+
       }
 
       .landing-link {
@@ -490,7 +503,9 @@ a {
         &:hover {
           animation: fading 1s ease-out 0s;
         }
+
       }
+
     }
 
     &__img {
@@ -508,16 +523,22 @@ a {
           border-radius: 50%;
           width: 12rem;
           height: 12rem;
+
         }
 
         @include desktop {
           border-radius: 50%;
           width: 12rem;
           height: 12rem;
+
         }
+
       }
+
     }
+
   }
+
 }
 
 .footer-top {
@@ -542,17 +563,20 @@ a {
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
         border-right: none;
+
       }
 
       &:nth-of-type(9) {
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         border-left: none;
+
       }
 
       &:nth-of-type(5) {
         padding: 0.5rem;
         border-radius: 50%;
+
       }
 
       &:nth-of-type(2),
@@ -563,6 +587,7 @@ a {
       &:nth-of-type(8) {
         border-right: none;
         border-left: none;
+
       }
     }
 
@@ -580,12 +605,14 @@ a {
         font-size: 0.8rem;
         padding: 0.5rem 0;
         text-transform: uppercase;
+
       }
 
       @include tablette {
         font-size: 0.8rem;
         padding: 0.5rem 0;
         text-transform: uppercase;
+
       }
 
       i {
@@ -597,14 +624,19 @@ a {
 
         @include tablette {
           font-size: 2rem;
+
         }
+
       }
 
       &:hover {
         animation: fading 1s ease-out 0s;
       }
+
     }
+
   }
+
 }
 
 .footer-btm {
@@ -624,8 +656,11 @@ a {
 
       &:hover {
         animation: fading 1s ease-out 0s;
+
       }
+
     }
+
   }
 
   &__copyright {
@@ -635,6 +670,7 @@ a {
     a:hover {
       animation: fading 1s ease-out 0.1s;
     }
+
   }
 
 }
@@ -651,6 +687,7 @@ a {
     padding-right: 2rem;
     padding-left: 2rem;
     grid-column-gap: 2rem;
+
   }
 
   @include desktop {
@@ -659,6 +696,7 @@ a {
     padding-right: 2rem;
     padding-left: 2rem;
     grid-column-gap: 2rem;
+
   }
 
   &-element {
@@ -666,7 +704,6 @@ a {
     grid-template-rows: 1fr 1fr;
     padding-right: 1rem;
     padding-left: 1rem;
-
 
     &__title {
       @include self-center;
@@ -677,6 +714,7 @@ a {
       line-height: normal;
       text-transform: uppercase;
       overflow: hidden;
+
     }
 
     &__content {
@@ -713,7 +751,9 @@ a {
             font-family: $text-regular;
             font-weight: 300;
             line-height: normal;
+
           }
+
         }
 
         button {
@@ -733,8 +773,13 @@ a {
             @include ease-out;
             background-color: rgba($color: grey, $alpha: 0.1);
           }
+
         }
+
       }
+
     }
+
   }
+
 }
