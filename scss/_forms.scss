@@ -6,13 +6,14 @@
   padding: 2.8125rem 0;
   background-color: lighten($color:$my-light-blue, $amount:45%);
   border-radius: 2px;
-
   display: grid;
   grid-template-rows: 1fr 2fr;
 
   &-title {
     justify-self: center;
+
     @include self-center;
+
     font-family: $capital;
     font-size: 1rem;
     line-height: 1rem;
@@ -23,6 +24,7 @@
 
     @include desktop {
       @include ease-out;
+
       font-size: 1.5rem;
       line-height: 2rem;
     }

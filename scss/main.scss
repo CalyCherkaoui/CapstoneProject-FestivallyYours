@@ -362,30 +362,6 @@ a {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 
-  #rib1 {
-    background-color: lighten($color:$primary, $amount: 10%);
-
-    .landing-section__content {
-      .landing-link {
-        color: lighten($color:$primary, $amount: 10%);
-      }
-    }
-  }
-
-  #rib2 {
-    background-color: darken($text-shade, 25%);
-
-    .landing-section__content {
-      .landing-link {
-        color: darken($text-shade, 25%);
-      }
-    }
-  }
-
-  #rib3 {
-    background-color: lighten($classic-blue, $amount: 15%);
-  }
-
   .landing-section {
     display: flex;
     flex-direction: column-reverse;
@@ -478,6 +454,10 @@ a {
           text-align: left;
         }
       }
+
+      .landing-link:hover {
+        animation: fading 1s ease-out 0s;
+      }
     }
 
     &__img {
@@ -508,8 +488,28 @@ a {
   }
 }
 
-.landing-link:hover {
-  animation: fading 1s ease-out 0s;
+#rib1 {
+  background-color: lighten($color:$primary, $amount: 10%);
+
+  .landing-section__content {
+    .landing-link {
+      color: lighten($color:$primary, $amount: 10%);
+    }
+  }
+}
+
+#rib2 {
+  background-color: darken($text-shade, 25%);
+
+  .landing-section__content {
+    .landing-link {
+      color: darken($text-shade, 25%);
+    }
+  }
+}
+
+#rib3 {
+  background-color: lighten($classic-blue, $amount: 15%);
 }
 
 .footer-top {
@@ -597,37 +597,6 @@ a {
       &:hover {
         animation: fading 1s ease-out 0s;
       }
-    }
-  }
-}
-
-.footer-btm {
-  background-color: $footer-light;
-  width: 100%;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__icons {
-    font-size: 1.2rem;
-    color: $text-shade;
-
-    a {
-      margin-left: 0.3rem;
-
-      &:hover {
-        animation: fading 1s ease-out 0s;
-      }
-    }
-  }
-
-  &__copyright {
-    font-size: 0.8rem;
-    color: $text-shade;
-
-    a:hover {
-      animation: fading 1s ease-out 0.1s;
     }
   }
 }
@@ -727,6 +696,37 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+.footer-btm {
+  background-color: $footer-light;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__icons {
+    font-size: 1.2rem;
+    color: $text-shade;
+
+    a {
+      margin-left: 0.3rem;
+
+      &:hover {
+        animation: fading 1s ease-out 0s;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 0.8rem;
+    color: $text-shade;
+
+    a:hover {
+      animation: fading 1s ease-out 0.1s;
     }
   }
 }
