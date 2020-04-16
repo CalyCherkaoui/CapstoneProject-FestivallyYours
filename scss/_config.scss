@@ -1,5 +1,5 @@
 // color palette
-$primary: #f42;
+$primary: lighten(#f42, 10%);
 $secondary: lighten($primary, 30%);
 $text-light: white;
 $text-shade: lighten(rgb(97, 94, 94), 30%);

@@ -2,16 +2,26 @@ header {
   width: 100%;
   padding: 0.3rem 0.1rem 0.8rem 0.1rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: $primary;
   position: fixed;
   z-index: 20;
+
+  @include tablette {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .brand-nav {
   height: 2rem;
   padding-left: 3.5rem;
+  padding-right: 3.5rem;
   font-size: 0.9rem;
   color: $text-light;
   overflow: hidden;
@@ -19,7 +29,6 @@ header {
   @include tablette {
     font-size: 1.3rem;
     height: 2rem;
-    padding-left: 3.5rem;
 
     @include ease-out;
     @include self-center;
@@ -28,7 +37,6 @@ header {
   @include desktop {
     font-size: 1.3rem;
     height: 2rem;
-    padding-left: 3.5rem;
   }
 }
 
@@ -86,6 +94,36 @@ header {
         transform: scale(1, 1);
       }
     }
+  }
+}
+
+.nav-sm-icons-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  @include tablette {
+    display: inline;
+  }
+
+  @include desktop {
+    display: inline;
+  }
+
+  .nav-sm-icon {
+    color: $text-light;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    
+      @include tablette {
+        display: none;
+      }
+
+      @include desktop {
+        display: none;
+      }
   }
 }
 
