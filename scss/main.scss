@@ -70,6 +70,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 0 2rem 1rem 2rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   &-text {
     font-family: $text-regular;
@@ -125,7 +127,7 @@ a {
     justify-content: start;
     padding-bottom: 1rem;
 
-    p {
+    h1 {
       font-family: $capital-accent;
       font-weight: 400;
       font-size: 0.8rem;
@@ -330,6 +332,7 @@ a {
       font-family: $navigation-font;
       text-transform: uppercase;
       letter-spacing: 0.1rem;
+
       @include self-center;
     }
 
