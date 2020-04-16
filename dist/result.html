@@ -1,271 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festivally Yours</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="brand-nav">
-        <a class="logo" href="#">Festivally <span>Yours !</span></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festivally Yours</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <div class="brand-nav">
+      <a class="logo" href="#">Festivally <span>Yours !</span></a>
+    </div>
+    <nav class="nav-wrapper">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="index.html" class="nav-list__link">Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="result.html" class="nav-list__link current">Events</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">About</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">Subscribe</a>
+        </li>
+      </ul>
+      <div class="hamburger-btn">
+        <div class="hamburger-btn__line"></div>
       </div>
-      <nav class="nav-wrapper">
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="index.html" class="nav-list__link">Home</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="result.html" class="nav-list__link current">Events</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">About</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Subscribe</a>
-          </li>
-        </ul>
-        <div class="hamburger-btn">
-          <div class="hamburger-btn__line"></div>
+    </nav>
+  </header>
+  <main id="result">
+    <section class="filter">
+      <h2 class="filter-title">
+        Filter by name, country, event date, music Genre, artists:
+      </h2>
+      <form class="filter-form">
+        <label class="filter-form__element-title_desk">Festival Name:</label>
+        <label class="filter-form__element-title_desk"> Country:</label>
+        <label class="filter-form__element-title_desk">Music Genre:</label>
+        <label class="filter-form__element-title_desk">Artists: </label>
+        <label class="filter-form__element-title_desk">Event date:</label>
+        <div class="empty-separator-lm"></div>
+
+        <label class="filter-form__element-title">Festival Name: *</label>
+        <input type="text" placeholder="Enter a name of a festival" />
+
+        <label class="filter-form__element-title"> Country:</label>
+
+        <input list="Country" name="Country" placeholder="Select a country" />
+        <datalist id="Country">
+          <option value=" Afghanistan"> </option>
+          <option value=" Albania"> </option>
+          <option value=" Algeria"> </option>
+          <option value=" American Samoa"> </option>
+          <option value=" Andorra"> </option>
+          <option value=" Angola"> </option>
+          <option value=" Anguilla"> </option>
+          <option value=" Antigua and Barbuda"> </option>
+          <option value=" Argentina"> </option>
+          <option value=" Armenia"> </option>
+          <option value=" Aruba"> </option>
+          <option value=" Australia"> </option>
+          <option value=" Austria"> </option>
+          <option value=" Azerbaijan"> </option>
+          <option value=" Bahamas"> </option>
+          <option value=" Bahrain"> </option>
+          <option value=" Bangladesh"> </option>
+          <option value=" Barbados"> </option>
+          <option value=" Belarus"> </option>
+          <option value=" Belgium"> </option>
+          <option value=" Belize"> </option>
+          <option value=" Benin"> </option>
+          <option value=" Bermuda"> </option>
+          <option value=" Bhutan"> </option>
+          <option value=" Bolivia"> </option>
+          <option value=" Bosnia and Herzegovina"> </option>
+          <option value=" Botswana"> </option>
+          <option value=" Brazil"> </option>
+          <option value=" British Virgin Islands"> </option>
+          <option value=" Brunei"> </option>
+          <option value=" Bulgaria"> </option>
+        </datalist>
+
+        <label class="filter-form__element-title">Music Genre:</label>
+        <input list="music" placeholder="Select a type of music" />
+        <datalist id="music">
+          <option value="Jazz"> </option>
+          <option value="Electro"> </option>
+          <option value="Blues"> </option>
+          <option value="Country"> </option>
+          <option value="Jazz manouch"> </option>
+        </datalist>
+
+        <label class="filter-form__element-title">Artists: </label>
+        <input type="text" placeholder="Enter a name of an artist" />
+
+        <label class="filter-form__element-title">Event date:</label>
+        <input type="text" placeholder="Select a date range" />
+
+        <div class="empty-separator-sm"></div>
+        <div class="filter-form__element-btn">
+          <button>Search</button>
+          <button>Clearfilter</button>
         </div>
-      </nav>
-    </header>
-    <main id="result">
-      <section class="filter">
-        <h2 class="filter-title">
-          Filter by name, country, event date, music Genre, artists:
-        </h2>
-        <form class="filter-form">
-          <label class="filter-form__element-title_desk">Festival Name:</label>
-          <label class="filter-form__element-title_desk"> Country:</label>
-          <label class="filter-form__element-title_desk">Music Genre:</label>
-          <label class="filter-form__element-title_desk">Artists: </label>
-          <label class="filter-form__element-title_desk">Event date:</label>
-          <div class="empty-separator-lm"></div>
-
-          <label class="filter-form__element-title">Festival Name: *</label>
-          <input type="text" placeholder="Enter a name of a festival" />
-
-          <label class="filter-form__element-title"> Country:</label>
-
-          <input list="Country" name="Country" placeholder="Select a country" />
-          <datalist id="Country">
-            <option value=" Afghanistan"> </option>
-            <option value=" Albania"> </option>
-            <option value=" Algeria"> </option>
-            <option value=" American Samoa"> </option>
-            <option value=" Andorra"> </option>
-            <option value=" Angola"> </option>
-            <option value=" Anguilla"> </option>
-            <option value=" Antigua and Barbuda"> </option>
-            <option value=" Argentina"> </option>
-            <option value=" Armenia"> </option>
-            <option value=" Aruba"> </option>
-            <option value=" Australia"> </option>
-            <option value=" Austria"> </option>
-            <option value=" Azerbaijan"> </option>
-            <option value=" Bahamas"> </option>
-            <option value=" Bahrain"> </option>
-            <option value=" Bangladesh"> </option>
-            <option value=" Barbados"> </option>
-            <option value=" Belarus"> </option>
-            <option value=" Belgium"> </option>
-            <option value=" Belize"> </option>
-            <option value=" Benin"> </option>
-            <option value=" Bermuda"> </option>
-            <option value=" Bhutan"> </option>
-            <option value=" Bolivia"> </option>
-            <option value=" Bosnia and Herzegovina"> </option>
-            <option value=" Botswana"> </option>
-            <option value=" Brazil"> </option>
-            <option value=" British Virgin Islands"> </option>
-            <option value=" Brunei"> </option>
-            <option value=" Bulgaria"> </option>
-          </datalist>
-
-          <label class="filter-form__element-title">Music Genre:</label>
-          <input list="music" placeholder="Select a type of music" />
-          <datalist id="music">
-            <option value="Jazz"> </option>
-            <option value="Electro"> </option>
-            <option value="Blues"> </option>
-            <option value="Country"> </option>
-            <option value="Jazz manouch"> </option>
-          </datalist>
-
-          <label class="filter-form__element-title">Artists: </label>
-          <input type="text" placeholder="Enter a name of an artist" />
-
-          <label class="filter-form__element-title">Event date:</label>
-          <input type="text" placeholder="Select a date range" />
-
-          <div class="empty-separator-sm"></div>
-          <div class="filter-form__element-btn">
-            <button>Search</button>
-            <button>Clearfilter</button>
-          </div>
-        </form>
-      </section>
-      <section class="results">
-        <h1 class="results-head">Your Search Results Found 7 Festivals</h1>
-        <div class="results-gallery">
-          <a href="./festivals/card1.html" class="results-gallery__img">
-            <div class="results-gallery__img-txt">
-              <h1>Afropunk Festival</h1>
-              <p>
-                August 2020, Brooklyn, USA + other dates in Paris, Johannesburg,
-                London and Atlanta
-              </p>
-            </div>
-            <img src="./image/AFROPUNK.jpg" alt="1" />
-          </a>
-          <a href="./festivals/card2.html" class="results-gallery__img">
-            <div class="results-gallery__img-txt">
-              <h1>django reinhardt</h1>
-              <p>
-                15 Mar to 27 Nov 2020, Strasbourg, France
-              </p>
-            </div>
-            <img src="./image/django.jpg" alt="2" />
-          </a>
-          <a href="./festivals/card3.html" class="results-gallery__img">
-            <div class="results-gallery__img-txt">
-              <h1>Creamfields</h1>
-              <p>
-                27-30 August 2020, Daresbury, UK
-              </p>
-            </div>
-            <img src="./image/Creamfields.jpg" alt="3" />
-          </a>
-          <a href="./festivals/card4.html" class="results-gallery__img">
-            <div class="results-gallery__img-txt">
-              <h1>Primavera Sound</h1>
-              <p>
-                4-6 June 2020, Barcelona, Spain
-              </p>
-            </div>
-            <img src="./image/PrimaveraSound.jpg" alt="4" />
-          </a>
-          <a href="./festivals/card5.html" class="results-gallery__img">
-            <div class="results-gallery__img-txt">
-              <h1>Coachella Festival</h1>
-              <p>
-                10-12 April & 17-19 April 2020, Indio, California
-              </p>
-            </div>
-            <img src="./image/Coachella.jpg" alt="5" />
-          </a>
-          <a href="./festivals/card6.html" class="results-gallery__img">
-            <div class="results-gallery__img-txt">
-              <h1>Tomorrowland</h1>
-              <p>17-19 July & 24-26 July 2020, Boom, Belgium</p>
-            </div>
-            <img src="./image/Tomorrowland.jpg" alt="6" />
-          </a>
-          <a href="./festivals/card7.html" class="results-gallery__img">
-            <div class="results-gallery__img-txt">
-              <h1>Montreux Jazz</h1>
-              <p>3 – 18 July 2020, Montreux, Switzerland</p>
-            </div>
-            <img src="./image/Montreux.jpg" alt="6" />
-          </a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-top">
-        <ul class="footer-list">
-          <li class="footer-list__item">
-            <a href="#" class="footer-list__link">home</a>
-          </li>
-          <li class="footer-list__item">
-            <a href="#" class="footer-list__link">search</a>
-          </li>
-          <li class="footer-list__item">
-            <a href="#" class="footer-list__link">about us</a>
-          </li>
-          <li class="footer-list__item">
-            <a href="#" class="footer-list__link">advertise</a>
-          </li>
-          <li class="footer-list__item">
-            <a href="#" class="footer-list__link">
-              <i class="fas fa-map-marker-alt"></i>
-            </a>
-          </li>
-          <li class="footer-list__item">
-            <a href="#" class="footer-list__link">facebook</a>
-          </li>
-          <li class="footer-list__item">
-            <a href="#" class="footer-list__link">twitter</a>
-          </li>
-          <li class="footer-list__item">
-            <a href="#" class="footer-list__link">blog</a>
-          </li>
-          <li class="footer-list__item">
-            <a href="#" class="footer-list__link">google</a>
-          </li>
-        </ul>
-      </div>
-      <section class="footer-mid">
-        <div class="footer-mid-element">
-          <h2 class="footer-mid-element__title">subscribe</h2>
-          <div class="footer-mid-element__content">
-            <form>
-              <input type="text" placeholder="enter your e-mail" />
-              <button>send</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer-mid-element">
-          <h2 class="footer-mid-element__title">contact</h2>
-          <div class="footer-mid-element__content">
+      </form>
+    </section>
+    <section class="results">
+      <h1 class="results-head">Your Search Results Found 7 Festivals</h1>
+      <div class="results-gallery">
+        <a href="./festivals/card1.html" class="results-gallery__img">
+          <div class="results-gallery__img-txt">
+            <h1>Afropunk Festival</h1>
             <p>
-              Lorem ipsum dolor sit amet,
-              <a href="#"
-                >Lorem, ipsum dolor sit amet consectetur adipisicing</a
-              >
-              elit.
+              August 2020, Brooklyn, USA + other dates in Paris, Johannesburg,
+              London and Atlanta
             </p>
           </div>
-        </div>
-        <div class="footer-mid-element">
-          <h2 class="footer-mid-element__title">about</h2>
-          <div class="footer-mid-element__content">
+          <img src="./image/AFROPUNK.jpg" alt="1" />
+        </a>
+        <a href="./festivals/card2.html" class="results-gallery__img">
+          <div class="results-gallery__img-txt">
+            <h1>django reinhardt</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae,
-              repellendus.
+              15 Mar to 27 Nov 2020, Strasbourg, France
             </p>
           </div>
-        </div>
-      </section>
-      <div class="footer-btm">
-        <div class="footer-btm__icons">
-          <a href="#">
-            <i class="fab fa-twitter"></i>
+          <img src="./image/django.jpg" alt="2" />
+        </a>
+        <a href="./festivals/card3.html" class="results-gallery__img">
+          <div class="results-gallery__img-txt">
+            <h1>Creamfields</h1>
+            <p>
+              27-30 August 2020, Daresbury, UK
+            </p>
+          </div>
+          <img src="./image/Creamfields.jpg" alt="3" />
+        </a>
+        <a href="./festivals/card4.html" class="results-gallery__img">
+          <div class="results-gallery__img-txt">
+            <h1>Primavera Sound</h1>
+            <p>
+              4-6 June 2020, Barcelona, Spain
+            </p>
+          </div>
+          <img src="./image/PrimaveraSound.jpg" alt="4" />
+        </a>
+        <a href="./festivals/card5.html" class="results-gallery__img">
+          <div class="results-gallery__img-txt">
+            <h1>Coachella Festival</h1>
+            <p>
+              10-12 April & 17-19 April 2020, Indio, California
+            </p>
+          </div>
+          <img src="./image/Coachella.jpg" alt="5" />
+        </a>
+        <a href="./festivals/card6.html" class="results-gallery__img">
+          <div class="results-gallery__img-txt">
+            <h1>Tomorrowland</h1>
+            <p>17-19 July & 24-26 July 2020, Boom, Belgium</p>
+          </div>
+          <img src="./image/Tomorrowland.jpg" alt="6" />
+        </a>
+        <a href="./festivals/card7.html" class="results-gallery__img">
+          <div class="results-gallery__img-txt">
+            <h1>Montreux Jazz</h1>
+            <p>3 – 18 July 2020, Montreux, Switzerland</p>
+          </div>
+          <img src="./image/Montreux.jpg" alt="6" />
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-top">
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">home</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">search</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">about us</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">advertise</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">
+            <i class="fas fa-map-marker-alt"></i>
           </a>
-          <a href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <div class="footer-btm__copyright">
-          <a class="logo" href="#"> Festivally Yours!</a>
-          &copy; Copy rights 2020.
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">facebook</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">twitter</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">blog</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">google</a>
+        </li>
+      </ul>
+    </div>
+    <section class="footer-mid">
+      <div class="footer-mid-element">
+        <h2 class="footer-mid-element__title">subscribe</h2>
+        <div class="footer-mid-element__content">
+          <form class="footer-form">
+            <input class="footer-input" type="text" placeholder="enter your e-mail" />
+            <button class="footer-butn">send</button>
+          </form>
         </div>
       </div>
-    </footer>
-    <script src="js/main.js"></script>
-  </body>
+      <div class="footer-mid-element">
+        <h2 class="footer-mid-element__title">contact</h2>
+        <div class="footer-mid-element__content">
+          <p>
+            Lorem ipsum dolor sit amet,
+            <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing</a>
+            elit.
+          </p>
+        </div>
+      </div>
+      <div class="footer-mid-element">
+        <h2 class="footer-mid-element__title">about</h2>
+        <div class="footer-mid-element__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae,
+            repellendus.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="footer-btm">
+      <div class="footer-btm__icons">
+        <a class="footer-btm__icon" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="footer-btm__icon" href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a class="footer-btm__icon" href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="footer-btm__icon" href="#">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="footer-btm__copyright">
+        <a class="logo footer-logo" href="#"> Festivally Yours!</a>
+        &copy; Copy rights 2020.
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
