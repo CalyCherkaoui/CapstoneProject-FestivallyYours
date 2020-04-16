@@ -322,9 +322,9 @@ a {
 
       @include self-center;
 
-      i {
-        padding: 0.5rem;
-      }
+      // i {
+      //   padding: 0.5rem;
+      // }
     }
 
     &__title {
@@ -354,6 +354,10 @@ a {
       }
     }
   }
+}
+
+.guide-i {
+  padding: 0.5rem;
 }
 
 .landing {
