@@ -692,9 +692,11 @@ a {
         border: solid 0.5px gray;
         outline: none;
         background: transparent;
-        padding: 0.4rem 0;
         text-align: center;
-        z-index: 2; }
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-self: center; }
         .search .form-container .search-form input[type="text"]::placeholder {
           font-size: 0.9rem;
           color: gray;

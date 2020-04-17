@@ -221,9 +221,9 @@ a {
         border: solid 0.5px $text-grey;
         outline: none;
         background: transparent;
-        padding: 0.4rem 0;
         text-align: center;
         z-index: 2;
+        @include self-center;
 
         &::placeholder {
           font-size: 0.9rem;
