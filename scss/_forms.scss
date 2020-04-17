@@ -41,6 +41,7 @@
     grid-gap: 0.1rem;
 
     @include desktop {
+      padding-right: 6rem;
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: 1fr 1fr;
     }
@@ -96,7 +97,7 @@
       }
 
       &::placeholder {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: $text-grey;
         font-family: $text-regular;
         font-weight: 300;
@@ -112,9 +113,9 @@
 
     button {
       height: 2rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      font-size: 0.9rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 0.8rem;
       color: $text-light;
       font-family: $text-regular;
       font-weight: 700;

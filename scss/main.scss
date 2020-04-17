@@ -75,13 +75,13 @@ a {
 
   &-text {
     font-family: $text-regular;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
     padding: 0.6rem;
   }
 
   .logo {
-    font-size: 1rem;
+    font-size: 0.9rem;
     letter-spacing: normal;
     padding: 0 1rem;
     text-align: end;
@@ -207,9 +207,10 @@ a {
       color: $text-dark;
       padding-bottom: 0.5rem;
       z-index: 2;
+      overflow-x: hidden;
     }
 
-    form {
+    .search-form {
       width: 100%;
       display: inline-flex;
       z-index: 2;
@@ -231,32 +232,6 @@ a {
           font-weight: 300;
           line-height: normal;
           z-index: 3;
-        }
-      }
-
-      .button {
-        width: 30%;
-        height: 2rem;
-        padding: 0.5rem;
-        font-size: 0.9rem;
-        color: $text-light;
-        font-family: $text-regular;
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: normal;
-        border: solid 1px $primary;
-        background-color: $primary;
-        outline: none;
-        z-index: 2;
-
-        @include self-center;
-
-        &:hover {
-          cursor: pointer;
-          background-color: rgba($color: grey, $alpha: 0.1);
-          color: $primary;
-
-          @include ease-out;
         }
       }
     }
@@ -286,6 +261,35 @@ a {
     left: 0;
     top: 0;
     z-index: -1;
+  }
+}
+
+.button-search {
+  width: 30%;
+  height: 2rem;
+  font-size: 0.75rem;
+  color: $text-light;
+  font-family: $text-regular;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: solid 1px $primary;
+  background-color: $primary;
+  outline: none;
+  z-index: 2;
+  overflow-x: hidden;
+  @include self-center
+  
+  .button-link {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($color: grey, $alpha: 0.1);
+    color: $primary;
+    
+    @include ease-out;
   }
 }
 
@@ -435,7 +439,7 @@ a {
       .landing-link {
         width: 7rem;
         margin-top: 0.8rem;
-        padding: 0.3rem;
+        padding-left: 0.7rem;
         font-family: $text-regular;
         font-size: 0.8rem;
         font-weight: 500;
@@ -565,7 +569,7 @@ a {
 
     &__link {
       color: rgba($color: $text-light, $alpha: 0.7);
-      font-size: 0.7rem;
+      font-size: 0.55rem;
       font-family: $navigation-font;
       font-weight: 300;
       overflow: hidden;
@@ -610,6 +614,7 @@ a {
   width: 100%;
   height: 15vh;
   display: none;
+  overflow-x: hidden;
 
   @include tablette {
     display: grid;
@@ -647,21 +652,24 @@ a {
 
     &__content {
       text-align: center;
-
-      p {
-        font-size: 0.8rem;
-        color: $text-light;
-        font-family: $text-regular;
-        padding-left: 10%;
-        padding-right: 10%;
-
-        a {
-          color: $secondary;
-        }
-      }
+      overflow: hidden;
     }
   }
 }
+
+.footer-mid-element__content-txt {
+  font-size: 0.7rem;
+  color: $text-light;
+  font-family: $text-regular;
+  padding-left: 1%;
+  padding-right: 1%;
+  overflow-x: hidden;
+  
+  .footer-mid-element__content-link {
+    color: $secondary;
+  }
+}
+
 
 .footer-form {
   @include self-center;
@@ -686,7 +694,7 @@ a {
   .footer-butn {
     width: 4rem;
     height: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: $text-shade;
     font-family: $text-regular;
     font-weight: 300;
@@ -694,6 +702,7 @@ a {
     border: solid 1px rgba($color: $text-light, $alpha: 0.2);
     background-color: rgba($color: grey, $alpha: 0.4);
     outline: none;
+    overflow: hidden;
 
     &:hover {
       cursor: pointer;
