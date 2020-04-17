@@ -277,7 +277,7 @@ a {
   outline: none;
   z-index: 2;
   overflow-x: hidden;
-  @include self-center
+  @include self-center;
   
   .button-link {
     margin-top: auto;
