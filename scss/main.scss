@@ -223,6 +223,7 @@ a {
         background: transparent;
         text-align: center;
         z-index: 2;
+
         @include self-center;
 
         &::placeholder {
@@ -277,8 +278,9 @@ a {
   outline: none;
   z-index: 2;
   overflow-x: hidden;
+
   @include self-center;
-  
+
   .button-link {
     margin-top: auto;
     margin-bottom: auto;
@@ -288,7 +290,7 @@ a {
     cursor: pointer;
     background-color: rgba($color: grey, $alpha: 0.1);
     color: $primary;
-    
+
     @include ease-out;
   }
 }
@@ -664,12 +666,11 @@ a {
   padding-left: 1%;
   padding-right: 1%;
   overflow-x: hidden;
-  
+
   .footer-mid-element__content-link {
     color: $secondary;
   }
 }
-
 
 .footer-form {
   @include self-center;

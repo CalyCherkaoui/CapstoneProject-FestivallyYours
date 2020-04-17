@@ -116,14 +116,14 @@ header {
     font-size: 1.5rem;
     padding: 0.5rem;
     margin-right: 1rem;
-    
-      @include tablette {
-        display: none;
-      }
 
-      @include desktop {
-        display: none;
-      }
+    @include tablette {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+    }
   }
 }
 
