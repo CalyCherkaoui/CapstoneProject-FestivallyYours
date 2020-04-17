@@ -54,7 +54,7 @@ firefox index.html
 
 ## Live Demo:
 
-[Click here to see a live version of the project hosted on GitHack](https://rawcdn.githack.com/CalyCherkaoui/CapstoneProject-FestivallyYours/f31dfa477b22599ff7da402ca27657c5e244f7e0/dist/index.html)
+[Click here to see a live version of the project hosted on GitHack](https://rawcdn.githack.com/CalyCherkaoui/CapstoneProject-FestivallyYours/6bc2e20817ed38cdb7bdd109092d1bc0d68ee30b/dist/index.html)
 
 ## Author:
 
