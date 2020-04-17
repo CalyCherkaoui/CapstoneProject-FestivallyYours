@@ -683,11 +683,12 @@ a {
     background: transparent;
 
     &::placeholder {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       color: rgba($color: $text-shade, $alpha: 0.5);
       font-family: $text-regular;
       font-weight: 300;
       line-height: normal;
+      text-transform: capitalize;
     }
   }
 
