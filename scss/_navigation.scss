@@ -1,0 +1,158 @@
+header {
+  width: 100%;
+  padding: 0.3rem 0.1rem 0.8rem 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary;
+  position: fixed;
+  z-index: 20;
+
+  @include tablette {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.brand-nav {
+  height: 2rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  font-size: 0.9rem;
+  color: $text-light;
+  overflow: hidden;
+
+  @include tablette {
+    font-size: 1.3rem;
+    height: 2rem;
+
+    @include ease-out;
+    @include self-center;
+  }
+
+  @include desktop {
+    font-size: 1.3rem;
+    height: 2rem;
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: none;
+
+  @include tablette {
+    display: flex;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+
+  &__item {
+    padding: 0.8rem 0.6rem;
+  }
+
+  &__link {
+    font-size: 0.9rem;
+    font-family: $navigation-font;
+    font-weight: 700;
+    color: $text-light;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      background-color: $nav-hover;
+      position: absolute;
+      bottom: -0.6rem;
+      left: 0;
+      right: 0;
+      // opacity: 0;
+      transform: scale(0, 1);
+      transform-origin: left;
+      transition: transform ease-in-out 0.5s;
+    }
+
+    &:hover {
+      color: $nav-hover;
+      animation: fading 1s ease-out 0s;
+
+      &::after {
+        // opacity: 1;
+        transform: scale(1, 1);
+      }
+    }
+  }
+}
+
+.nav-sm-icons-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  @include tablette {
+    display: inline;
+  }
+
+  @include desktop {
+    display: inline;
+  }
+
+  .nav-sm-icon {
+    color: $text-light;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+
+    @include tablette {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.hamburger-btn {
+  padding: 0.8rem 1rem;
+
+  .hamburger-btn__line {
+    width: 2.1rem;
+    height: 3px;
+    background: $text-light;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2.1rem;
+      height: 3px;
+      background: $text-light;
+      border-radius: 3px;
+    }
+
+    &::before {
+      transform: translateY(-8px);
+    }
+
+    &::after {
+      transform: translateY(8px);
+    }
+  }
+}

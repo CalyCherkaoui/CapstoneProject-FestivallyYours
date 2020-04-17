@@ -1,0 +1,154 @@
+.filter {
+  position: relative;
+  height: fit-content;
+  width: 97%;
+  margin: 2rem auto;
+  padding: 2.8125rem 0;
+  background-color: lighten($color:$text-grey, $amount:45%);
+  border-radius: 2px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+
+  &-title {
+    justify-self: center;
+
+    @include self-center;
+
+    font-family: $capital;
+    font-size: 1rem;
+    line-height: 1rem;
+    height: auto;
+    overflow: hidden;
+    color: $primary;
+    text-transform: capitalize;
+
+    @include desktop {
+      @include ease-out;
+
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  &-form {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0.3rem;
+
+    @include desktop {
+      padding-right: 6rem;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &__element-title_desk {
+      align-self: end;
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
+    &__element-title {
+      @include self-center;
+
+      @include desktop {
+        display: none;
+      }
+    }
+
+    .empty-separator-lm {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
+    .empty-separator-sm {
+      @include desktop {
+        display: none;
+      }
+    }
+
+    label {
+      font-size: 0.9rem;
+      font-family: $text-regular;
+      color: $footer-light;
+    }
+
+    input {
+      height: 2rem;
+      width: 100%;
+      border: solid 0.5px $text-grey;
+      border-radius: 3px;
+      background: $text-light;
+      padding: 0.4rem 0;
+      text-align: center;
+
+      @include desktop {
+        height: 2.5rem;
+      }
+
+      &::placeholder {
+        font-size: 0.8rem;
+        color: $text-grey;
+        font-family: $text-regular;
+        font-weight: 300;
+        line-height: normal;
+        z-index: 3;
+      }
+    }
+
+    &__element-btn {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    button {
+      height: 2rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 0.8rem;
+      color: $text-light;
+      font-family: $text-regular;
+      font-weight: 700;
+      line-height: normal;
+      border: none;
+      border-radius: 3px;
+      box-shadow: none;
+      transition-duration: 0.4s;
+
+      &:focus {
+        background-color: initial;
+      }
+
+      &:nth-of-type(1) {
+        background-color: $my-light-blue;
+        margin-right: 0.15rem;
+      }
+
+      &:nth-of-type(2) {
+        background-color: $my-light-orange;
+      }
+
+      @include desktop {
+        height: 2.5rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $text-light;
+        color: $primary;
+
+        @include ease-out;
+      }
+    }
+  }
+}
